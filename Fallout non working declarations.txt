@@ -1,0 +1,630 @@
+/* private _hasWs = "ws" in A3A_enabledDLC;
+private _hasMarksman = "mark" in A3A_enabledDLC;
+private _hasLawsOfWar = "orange" in A3A_enabledDLC;
+private _hasTanks = "tank" in A3A_enabledDLC;
+private _hasContact = "enoch" in A3A_enabledDLC;
+private _hasJets = "jets" in A3A_enabledDLC;
+private _hasHelicopters = "heli" in A3A_enabledDLC;
+private _hasArtOfWar = "aow" in A3A_enabledDLC;
+private _hasApex = "expansion" in A3A_enabledDLC;
+private _hasGM = "gm" in A3A_enabledDLC;
+private _hasCSLA = "csla" in A3A_enabledDLC;
+private _hasRF = "rf" in A3A_enabledDLC;
+private _hasSOG = "vn" in A3A_enabledDLC;
+private _hasSPE = "spe" in A3A_enabledDLC;
+private _hasEF = "ef" in A3A_enabledDLC; */ ///dlc stuff if your templates needs it
+
+//////////////////////////
+//   Side Information   //
+//////////////////////////
+
+#include "..\..\script_component.hpp" // TAKE NOTE OF THIS. WITHOUT THIS, YOU CAN'T USE MACROS LIKE QPATHTOFOLDER.
+
+["name", "Brotherhood of Steel"] call _fnc_saveToTemplate;
+["spawnMarkerName", "BoS Support"] call _fnc_saveToTemplate;
+
+["flag", "Flag_White_F"] call _fnc_saveToTemplate;
+["flagTexture", "a3\data_f\flags\flag_white_co.paa"] call _fnc_saveToTemplate;
+["flagMarkerType", "flag_NATO"] call _fnc_saveToTemplate;
+
+//////////////////////////
+//       Vehicles       //
+//////////////////////////
+
+//["vehiclesSDV", ["B_SDV_01_F"]] call _fnc_saveToTemplate; //used only in salvage mission and only if template has "vanilla" flag 
+/// can be "B_SDV_01_F", "O_SDV_01_F" or "I_SDV_01_F"
+
+//["vehiclesDropPod", ["SpaceshipCapsule_01_F"]] call _fnc_saveToTemplate; //used in QRF orbital and crashsite mission
+/// can be a vehicle or prop like in example above(but it must have physix)
+
+["ammobox", "skyrix_chryslusM_355_Ammo"] call _fnc_saveToTemplate;
+["surrenderCrate", "Box_IND_Wps_F"] call _fnc_saveToTemplate; // Keep as default to avoid overriding complex logistics attachment offsets
+["equipmentBox", "Box_NATO_Equip_F"] call _fnc_saveToTemplate; // Keep as default to avoid overriding complex logistics attachment offsets
+
+["smallBunker", "fallout_turret_wall_180"] call _fnc_saveToTemplate;
+["sandbag", "fallout_turret_wall"] call _fnc_saveToTemplate;
+["sandbagRound", "fallout_turret_wall_90"] call _fnc_saveToTemplate;
+
+// vehicles can be placed in more than one category if they fit between both. Cost will be derived by the higher category
+// vehicles can be placed in more than one category if they fit between both. Cost will be derived by the higher category
+
+["vehiclesBasic", [
+    "AM_Buggy",                                                 // GM LSV Buggy
+    "AM_HMMWV_01",                                              // HMMWV 01
+    "B_BBrotherhoodOfSteal_HMMWV_OPEN_01"                       // HMMWV (OPEN) (BoS variant)
+]] call _fnc_saveToTemplate;          // unarmed or armed, with 0-2 passengers
+
+["vehiclesLightUnarmed", [
+    "AM_HMMWV_01",                                              // HMMWV 01
+    "B_BBrotherhoodOfSteal_HMMWV_OPEN_01",                      // HMMWV (OPEN) (BoS variant)
+    "Fallout_corvega",                                          // Chryslus Corvega Sedan
+    "AM_Fallout_corvega_02",                                    // Chryslus Highwayman
+    "AM_BTRGAZ"                                                 // Type 132 MRAP
+]] call _fnc_saveToTemplate;       // must be unarmed, unarmoured to lightly armoured, with 0-4 passengers
+
+["vehiclesLightArmed", [
+    "B_M66A4_minigun", "B_M66A4_minigun_M",                      // M66A4-PATTON-Minigun variants
+    "SC_Ferret_AR", "SC_Ferret_AC",                             // Ferret Scout Cars
+    "SC_AR_Mrap", "SC_SE_Mrap"                                  // Scion Conflict MRAPs
+]] call _fnc_saveToTemplate;             // Should be armed, unarmoured to lightly armoured, with 0-4 passengers
+
+["vehiclesTrucks", [
+    "SC_Gator_TO_AR", "SC_Gator_TO_SE", "SC_Gator_TO_AC",       // G12 Truck (Transport/Open)
+    "SC_Gator_TC_AR", "SC_Gator_TC_SE", "SC_Gator_TC_AC",       // G12 Truck (Transport/Closed)
+    "AM_zil167"                                                 // Heavy Amphibious Tactical Truck
+]] call _fnc_saveToTemplate;         // vehicle that can carry troops and cargoboxes
+
+["vehiclesCargoTrucks", [
+    "SC_Gator_FB_AR", "SC_Gator_FB_SE", "SC_Gator_FB_AC",       // G12 Truck (Flatbed)
+    "AM_Flatbed_Truck", "AM_Transp_Truck"                       // Ford F9 Variants
+]] call _fnc_saveToTemplate;        // vehicle that can carry only cargoboxes
+
+["vehiclesAmmoTrucks", [
+    "skyrix_chryslusM_355_Ammo"                                 // Chryslus M-355 Pack Rat (Ammo)
+]] call _fnc_saveToTemplate;         // wheeled vehicle with capability to rearm vehicles
+
+["vehiclesRepairTrucks", [
+    "skyrix_chryslusM_355_Repair"                               // Chryslus M-355 Pack Rat (Repair)
+]] call _fnc_saveToTemplate;       // wheeled vehicle with capability to repair vehicles
+
+["vehiclesFuelTrucks", [
+    "skyrix_chryslusM_355_Fuel"                                 // Chryslus M-355 Pack Rat (Fuel)
+]] call _fnc_saveToTemplate;         // wheeled vehicle with capability to refuel vehicles
+
+["vehiclesMedical", [
+    "skyrix_chryslusM_355"                                      // Chryslus M-355 Pack Rat (Base/Utility fallback)
+]] call _fnc_saveToTemplate;        // vehicle with capability to provide healing
+
+["vehiclesLightAPCs", [
+    "SC_Ferret_AA_AR", "SC_Ferret_Autocannon_AR"                 // Armed Light Ferret Scout Cars
+]] call _fnc_saveToTemplate;             // armed, lightly armoured, with 6-8 passengers 
+
+["vehiclesAPCs", [
+    "SC_SaurusAPC_SE",                                          // Saurus APC
+    "SC_SaurusAPC_Unarmed_SE",                                  // Saurus APC (Unarmed)
+    "AM_APC",                                                   // Aftermath Mod APC
+    "B_BBrotherhoodOfSteal_Buffalo_01"                          // Brotherhood Buffalo APC variant
+]] call _fnc_saveToTemplate;                  // armed with enclosed turret, armoured, with 6-8 passengers
+
+["vehiclesAirborne", [
+    // --- Brotherhood of Steel Vertibirds & Flight Assets ---
+    "B_BBrotherhoodOfSteal_XVB_02_01",                          // BoS XVB-02 (Custom Faction Variant)
+    "B_T_VTOL_01_infantry_BoS_F",                               // BoS XVB02 [Infantry]
+    "B_T_VTOL_01_armed_BoS_F",                                  // BoS XVB02 [Armed]
+    "B_T_VTOL_01_vehicle_BoS_F",                                // BoS XVB02 [Vehicle]
+    "XVB_02_infantry_BOS_F",                                    // XVB-02 [BOS, Unarmed]
+    "XVB_02_infantry_BOS_wolves_F",                             // XVB-02 [BOS, Unarmed, Wolves]
+    "B_BBrotherhoodOfSteal_Eyebot_01",                          // BoS Eyebot Drone
+
+    // --- Other Modded Flight Assets ---
+    "F_VB_01", "F_VB_02_abc"                                    // XVB-02 Vertibird / VB Classic base models
+]] call _fnc_saveToTemplate;              // airborne vehicles, could be with passenger seats or just a crew 
+
+["vehiclesIFVs", [
+    "SC_AR_IFV", "SC_SE_IFV"                                    // Scion Conflict Infantry Fighting Vehicles
+]] call _fnc_saveToTemplate;                  // capable of surviving multiple rockets, cannon armed, with 6-8 passengers
+
+["vehiclesTanks", [
+    "15thNCR_Tank_BOS",                                          // Tank (Brotherhood of Steel)
+    "SC_AR_MBT", "SC_SE_MBT",                                   // Scion Conflict Main Battle Tanks
+    "Max_HK_Tank"                                               // Hunter Killer Tank
+]] call _fnc_saveToTemplate;                 // cannon armed, heavely armored, passengers will be ignored
+
+["vehiclesLightTanks", [
+    "B_M66A4",                                                  // M66A4-PATTON
+    "SC_Mantis"                                                 // Mantis Tank
+]] call _fnc_saveToTemplate;             // tanks with poor armor and weapons
+
+["vehiclesAA", [
+    "SC_SaurusAPC_AA_SE"                                         // Saurus APC 'Shredder'
+]] call _fnc_saveToTemplate;                    // ideally heavily armed with anti-ground capability and enclosed turret. Passengers will be ignored
+
+
+["vehiclesTransportBoats", [
+    "AM_zil167"                                                 // Heavy Amphibious Tactical Truck (Fits transport/amphibious role)
+]] call _fnc_saveToTemplate;    // boat that can carry passengers and cargoboxes
+
+["vehiclesGunBoats", []] call _fnc_saveToTemplate;              // armed boat, with passengers(?)
+
+["vehiclesAmphibious", [
+    "AM_zil167"                                                 // Heavy Amphibious Tactical Truck
+]] call _fnc_saveToTemplate;          // armed or unarmed wheeled or tracked based vehicle with light armor(?) and passengers(?)
+
+// --- Fixed Wing / Heavy Air ---
+["vehiclesPlanesCAS", [
+    "SC_Fixed_Bomber_01"                                        // B-45 Strikebat Bomber
+]] call _fnc_saveToTemplate;             // Will be used with CAS script, must be defined in setPlaneLoadout. Needs fixed gun and either rockets or missiles
+
+["vehiclesPlanesAA", []] call _fnc_saveToTemplate;              // Will be used with ASF script, must be defined in setPlaneLoadout.
+
+["vehiclesPlanesTransport", [
+    "B_T_VTOL_01_infantry_BoS_F", "XVB_02_infantry_BOS_F",       // BoS Vertibird Infantry Variants
+    "XVB_02_infantry_BOS_wolves_F"                              // BoS Vertibird (Wolves)
+]] call _fnc_saveToTemplate;   // Plane that can carry passengers and cargo(?), infantry variant if available 
+
+["vehiclesPlanesGunship", [
+    "B_T_VTOL_01_armed_BoS_F"                                   // BoS XVB02 [Armed] Gunship Variant
+]] call _fnc_saveToTemplate;     // planes like V-44X armed, AC-130 or pelican from OPTRE, used in GUNSHIP support
+
+// --- Rotary / Helicopters ---
+["vehiclesHelisLight", [
+    "B_BFMRRaiders_Old_World_News_Helicopter_01"                // Old World News Helicopter (Fragile, fits passengers)
+]] call _fnc_saveToTemplate;            // ideally fragile & unarmed helis seating 4+
+
+["vehiclesHelisTransport", [
+    "B_BBrotherhoodOfSteal_XVB_02_01"                            // Brotherhood XVB-02 custom variant
+]] call _fnc_saveToTemplate;        // bigger heli with more passengers. 
+
+["vehiclesHelisLightAttack", [
+    "B_BFMRRaiders_Old_World_News_Helicopter_01_Armed_01"       // Old World News Helicopter (Armed)
+]] call _fnc_saveToTemplate;      // Utility helis with fixed or door guns + rocket pods
+
+["vehiclesHelisAttack", [
+    "B_T_VTOL_01_armed_BoS_F"                                   // Fallback placement for the armed BoS Vertibird
+]] call _fnc_saveToTemplate;           // Proper attack helis: Apache, Hind etc
+
+["vehiclesAirPatrol", [
+    "B_BFMRRaiders_Old_World_News_Helicopter_01",               // Raider Light Heli
+    "B_BFMRRaiders_Old_World_News_Helicopter_01_Armed_01"       // Raider Light Heli Armed
+]] call _fnc_saveToTemplate;             // preferably light helicopters(armed or unarmed), used in base patrol near bases
+
+// --- Artillery ---
+["vehiclesArtillery", []] call _fnc_saveToTemplate;             // wheeled or tracked vehicle with artillery cannon or rockets
+["magazines", createHashMapFromArray []] call _fnc_saveToTemplate; // element format: [Vehicle class, [Magazines]]
+
+// --- Drones / UAVs ---
+["uavsAttack", [
+    "max_HK_A"                                                  // Hunter Killer Aerial
+]] call _fnc_saveToTemplate;                    // unmanned aerial vehicle with heavy armament
+
+["uavsPortable", [
+    "B_BBrotherhoodOfSteal_Eyebot_01"                           // Brotherhood Eyebot Drone
+]] call _fnc_saveToTemplate;                  // unmanned aerial vehicle(drone), unarmed or armed(Western Sahara style), must be able to be disassembled
+
+// --- Militia / Raider Tier Configurations ---
+["vehiclesMilitiaLightArmed", [
+    "B_G_Offroad_01_armed_F",                                   // Offroad (HMG)
+    "Max_res_Offroad_Arm",                                      // Res. Offroad Armed
+    "B_BFMRRaiders_LSV_Buggy_01"                                // Raider LSV Buggy
+]] call _fnc_saveToTemplate;     // same as "vehiclesLightArmed" but for militia forces
+
+["vehiclesMilitiaTrucks", [
+    "B_BFMRRaiders_Old_World_Bus_01",                           // Raider Old World Bus
+    "B_BFMRRaiders_Old_World_GMC_Vandura_01",                   // Raider GMC Vandura
+    "B_BFMRRaiders_Old_World_Van_01"                            // Raider Old World Van
+]] call _fnc_saveToTemplate;         // same as "vehiclesTrucks" but for militia forces
+
+["vehiclesMilitiaCars", [
+    "Max_res_Offroad", "Offroad (C_Offroad_01_F)",              // Standard civilian/resistance offroads
+    "B_BFMRRaiders_Old_World_Fusion_Flea_01",                   // Raider Fusion Flea
+    "B_BFMRRaiders_Old_World_Pick_Up_01",                       // Raider Pick Up
+    "B_BFMRRaiders_Old_World_Highwayman_01",                    // Raider Highwayman
+    "B_BFMRRaiders_Old_World_Corvega_Sedan_01"                  // Raider Corvega Sedan
+]] call _fnc_saveToTemplate;           // same as "vehiclesLightUnarmed" but for militia forces
+
+["vehiclesMilitiaAPCs", [
+    "SC_Ferret_AR"                                              // Light Ferret Scout Car used as early-tier armor
+]] call _fnc_saveToTemplate;              // Militia APCs will be used at roadblocks and attacks at first 4 war levels
+
+["vehiclesPolice", [
+    "AM_Fallout_corvega_02_police"                              // Chryslus Highwayman [Police]
+]] call _fnc_saveToTemplate;                // cars used by police forces
+
+// --- Static Defenses & Emplacements ---
+["staticMGs", [
+    "B_BFMRRaiders_M2_01", "B_BFMRRaiders_M2_Low_01",           // Raider M2 Static HMGs
+    "fallout_turret", "fallout_turret_auto"                     // Fallout Automated & Scrap Laser Turrets
+]] call _fnc_saveToTemplate;                     // static machine guns
+
+["staticAT", [
+    "fallout_turret_wall",                                      // Fallback for static heavy defense wall positions
+    "B_static_AT_F"                                             // Intentionally left blank or fallback if mod lacked static AT launchers
+]] call _fnc_saveToTemplate;                      // static anti-tank weapons 
+
+["staticAA", [
+    "SC_SaurusAPC_AA_SE"                                        // Fallback configuration if static AA pods aren't in mod list
+]] call _fnc_saveToTemplate;                      // static anti-aircraft weapons
+
+["staticMortars", [
+    "B_Fallout_Minutemen_82mm_Mortar_01",                       // Minutemen 82mm Mortar
+    "B_BFMRRaiders_Mk6_Mortar_01"                               // Raider Mk6 Mortar
+]] call _fnc_saveToTemplate;                 // static mortars
+
+["staticHowitzers", []] call _fnc_saveToTemplate;               // static howitzers
+
+// --- Radar & SAM Configurations ---
+["vehicleRadar", ""] call _fnc_saveToTemplate;                  // vehicle with radar
+["vehicleSam", ""] call _fnc_saveToTemplate;                    // vehicle with SAM
+
+["howitzerMagazineHE", ""] call _fnc_saveToTemplate;            // explosive ammo for Howitzer
+
+["mortarMagazineHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;              // standard explosive ammo for mortars
+["mortarMagazineSmoke", "8Rnd_82mm_Mo_Smoke_white"] call _fnc_saveToTemplate;           // smoke ammo for mortars
+
+// --- Minefields ---
+["minefieldAT", ["ATMine"]] call _fnc_saveToTemplate;                                   // anti-tank mines
+["minefieldAPERS", ["APERSMine", "APERSTripMine"]] call _fnc_saveToTemplate;             // anti-personnel mines
+
+
+//Example on how to use dlc content
+/* if (_hasContact) then {
+    #include "..\DLC_content\vehicles\Contact\weird_alien_bug.sqf"
+}; */
+
+//Example on how to use mod content
+//If CUP
+/* if (isClass (configFile >> "cfgVehicles" >> "CUP_ZSU23_Base")) then {
+    #include "..\MOD_content\CUP\Vanilla_AAF\Vehicles_AAF.sqf"
+}; */
+
+//or like this
+
+//Example on how to use mod content
+/* if (isClass (configFile >> "cfgVehicles" >> "vnx_b_air_ac119_02_01")) then {
+	_gunship pushBack "vnx_b_air_ac119_01_01";
+  	_transportplanes append ["vnx_b_air_ac119_02_01","vnx_b_air_ac119_02_02"];
+	_planesCAS pushBack "vnx_b_air_ac119_04_01";
+}; */
+
+//#include "xxx_Vehicle_Attributes.sqf"  /// in case you want vehicles to have custom "prices" and threat levels
+
+//SLAT cages, camo nets, logs, doors etc
+["animations", [
+    ["vehClass", ["animsourcefromgarage1", 0.3, "animsourcefromgarage2", 0.25, "animsourcefromgarage3", 0.3, "animsourcefromgarage4", 0.3]],
+    ["", []]
+]] call _fnc_saveToTemplate;
+
+/// or do it like this
+/* ["animations", [
+    #include "..\vehicleAnimations\vehicleAnimations_Vanilla.sqf"
+]] call _fnc_saveToTemplate; */
+
+//vehicle skins
+["variants", [
+    ["vehClass", ["paint", 1]]
+]] call _fnc_saveToTemplate;
+
+/// or do it like this
+/* ["variants", [
+    #include "..\vehicleVariants\Vanilla_NATO_Arid\CSLA_NATO_Arid.sqf"
+]] call _fnc_saveToTemplate; */
+
+///////////////////// 
+///  Identities   ///
+/////////////////////
+//Faces and Voices given to AI Factions.
+["faces", [
+    "GreekHead_A3_02",
+    "GreekHead_A3_03",
+    "GreekHead_A3_04",
+    "GreekHead_A3_05",
+    "GreekHead_A3_06",
+    "GreekHead_A3_07",
+    "GreekHead_A3_08",
+    "GreekHead_A3_09",
+    "GreekHead_A3_11",
+    "GreekHead_A3_12",
+    "GreekHead_A3_13",
+    "GreekHead_A3_14",
+    "Ioannou",
+    "Mavros"
+]] call _fnc_saveToTemplate;
+["voices", ["Male01ENG", "Male02ENG", "Male03ENG", "Male04ENG", "Male05ENG", "Male06ENG", "Male07ENG", "Male08ENG", "Male10ENG", "Male11ENG", "Male12ENG"]] call _fnc_saveToTemplate;
+
+//SpecialForces, Militia, Police Faces and Voices
+["sfVoices", ["Male01ENG", "Male02ENG", "Male03ENG", "Male04ENG", "Male05ENG"]] call _fnc_saveToTemplate;
+["sfFaces", []] call _fnc_saveToTemplate;
+["milVoices", []] call _fnc_saveToTemplate;
+["milFaces", []] call _fnc_saveToTemplate;
+["polVoices", []] call _fnc_saveToTemplate;
+["polFaces", []] call _fnc_saveToTemplate;
+["eliteVoices", ["Male01ENG", "Male02ENG", "Male03ENG"]] call _fnc_saveToTemplate;
+["eliteFaces", []] call _fnc_saveToTemplate;
+
+["insignia", []] call _fnc_saveToTemplate;
+["sfInsignia", []] call _fnc_saveToTemplate;
+["milInsignia", []] call _fnc_saveToTemplate;
+["polInsignia", []] call _fnc_saveToTemplate;
+["eliteInsignia", []] call _fnc_saveToTemplate;
+
+//////////////////////////
+//       Loadouts       //
+//////////////////////////
+private _loadoutData = call _fnc_createLoadoutData;
+
+["flag_BOS","flag_BOSeast","flag_txBOS","AFO_U_CombatArmor_BOS","AFO_U_CombatArmor_BOS_Medic","AFO_U_CombatArmor_BOS_Initiate","AFO_U_CombatArmor_BOS_Knight","AFO_U_CombatArmor_BOS_KnightSgt","AFO_U_CombatArmor_BOS_KnightCmdr","AFO_H_CombatHelmet_BOS","AFO_H_CombatHelmet_Masked_BOS","AM_Beret_02_BOS_Blk","AM_Beret_02_BOS_Blu","AM_Beret_02_BOS_Gry"]
+
+
+_loadoutData set ["slRifles", [
+    "AM_ServiceRifleMk2",
+    "AM_ServiceRifle_N_MRCO"
+]];
+_loadoutData set ["rifles", [
+    "AM_LaserRifle_Black",
+    "AM_LaserRifleAuto",
+    "AM_LaserRifleAuto_GRA",
+    "AM_LaserRifle_Mk2",
+    "AM_Laser_Musket"
+]];
+_loadoutData set ["carbines", [
+    "AM_AER14",
+    "AM_HoloRifle",
+    "AM_HoloRifle_Nugz"
+]];
+_loadoutData set ["grenadeLaunchers", [
+    "AM_ServiceRifle_GL",
+    "AM_ServiceRifleMk2_GL"
+]];
+_loadoutData set ["designatedGrenadeLaunchers", [
+    "AM_M79",
+    "AM_PumpGL"
+]];
+_loadoutData set ["SMGs", [
+    "AM_10mmSMG",
+    "AM_10mmSMGB",
+    "AM_9mmSMG"
+]];
+_loadoutData set ["machineGuns", [
+    "AM_Minigun_Base",
+    "AM_MinigunHS",
+    "AM_MinigunStable",
+    "AM_Gatling_Laser_Base",
+    "AM_Gatling_Laser_P_Base",
+    "AM_LMG"
+]];
+_loadoutData set ["marksmanRifles", [
+    "AM_HKG28",
+    "AM_rangerCarbine_Veteran",
+    "AM_HuntingRifle_mod_4k"
+]];
+_loadoutData set ["sniperRifles", [
+    "AM_AntiMatRifle",
+    "AM_AntiEverythingRifle",
+    "AM_SniperRifleGobi"
+]];
+
+_loadoutData set ["lightATLaunchers", [
+    "AM_bazooka"
+]];
+_loadoutData set ["lightHELaunchers", []];
+_loadoutData set ["ATLaunchers", [
+    "AM_launch_MissileLauncherSight",
+    "AM_m72"
+]];
+_loadoutData set ["missileATLaunchers", [
+    "AM_Hellstorm"
+]];
+_loadoutData set ["AALaunchers", [
+    "AM_launch_MissileLauncherSight_Shark" // Placeholder until a specific AA launcher is found
+]];
+_loadoutData set ["sidearms", [
+    "AM_10mmPistol",
+    "AM_LaserPistol",
+    "AM_M1911HD",
+    "AM_ThatGun",
+    "AM_LilDevil"
+]];
+
+_loadoutData set ["ATMines", []];
+_loadoutData set ["APMines", []];
+_loadoutData set ["lightExplosives", [
+    "AM_launch_Fatman"
+]];
+_loadoutData set ["heavyExplosives", [
+    "AM_launch_Fatman_Tallboy"
+]];
+
+_loadoutData set ["antiInfantryGrenades", []];
+_loadoutData set ["smokeGrenades", []];
+_loadoutData set ["signalsmokeGrenades", []];
+
+//Basic equipment. Shouldn't need touching most of the time.
+_loadoutData set ["maps", ["ItemMap"]];
+_loadoutData set ["watches", ["ItemWatch"]];
+_loadoutData set ["compasses", ["ItemCompass"]];
+_loadoutData set ["radios", ["ItemRadio"]];
+_loadoutData set ["gpses", ["ItemGPS"]];
+_loadoutData set ["NVGs", ["am_ulysses_respirator_nv", "am_nvg_anpvs7"]]; // Added custom fallout nightvision gear!
+_loadoutData set ["binoculars", ["AM_binoculars", "AM_binoculars_small"]];
+_loadoutData set ["rangefinders", ["Rangefinder"]];
+
+_loadoutData set ["traitorUniforms", ["AM_Uniform_DesertCoat_S"]];
+_loadoutData set ["traitorVests", []];
+_loadoutData set ["traitorHats", ["am_cowboyHat_Bent_black"]];
+
+_loadoutData set ["officerUniforms", ["AM_Uniform_FormalSuit_Black_uniform"]];
+_loadoutData set ["officerVests", ["am_swat_black_mp_vest"]];
+_loadoutData set ["officerHats", ["AM_Beret_02_BOS_Blk", "AM_Beret_02_BOS_Blu", "AM_Beret_02_BOS_Gry"]]; // Your BoS Berets assigned here!
+
+_loadoutData set ["cloakUniforms", ["AM_Uniform_CowboyOutfit_DeepBlack"]];
+_loadoutData set ["cloakVests", []];
+_loadoutData set ["cloakRifles", ["AM_LaserRifle_Black"]];
+_loadoutData set ["cloakCarbines", ["AM_AER14"]];
+_loadoutData set ["cloakSidearms", ["AM_10mmPistol"]];
+_loadoutData set ["cloakGlasses", ["am_shades_nv", "am_glassesblackrimmed_tinted_nv"]];
+_loadoutData set ["uniforms", [
+    "AFO_U_CombatArmor_BOS",
+    "AFO_U_CombatArmor_BOS_Initiate",
+    "AFO_U_CombatArmor_BOS_Knight"
+]];
+_loadoutData set ["vests", [
+    "am_swat_vest",
+    "am_swat_black_vest"
+]];
+_loadoutData set ["Hvests", [
+    "am_swat_vest" // Heavy vest fallback
+]];
+_loadoutData set ["glVests", [
+    "am_swat_vest" // Grenadier vest fallback
+]];
+_loadoutData set ["backpacks", [
+    "AM_AvBagInvis",  // Standard carry weight capacity
+    "AM_BigBagInvis"  // High capacity invisible backpack
+]];
+_loadoutData set ["atBackpacks", [
+    "AM_BigBagInvis" // Ensures heavy missile ammo fits on AT guys
+]];
+_loadoutData set ["longRangeRadios", [
+    "B_RadioBag_01_mtp_F" // Vanilla long range radio fallback
+]];
+_loadoutData set ["helmets", [
+    "AFO_H_CombatHelmet_BOS",
+    "AFO_H_CombatHelmet_Masked_BOS"
+]];
+_loadoutData set ["officerHats", [
+    "AM_Beret_02_BOS_Blk",
+    "AM_Beret_02_BOS_Blu",
+    "AM_Beret_02_BOS_Gry"
+]];
+_loadoutData set ["sniHats", [
+    "AM_Cap_Grey",
+    "AM_Cap_Green"
+]];
+
+_loadoutData set ["facewear", [
+    "am_ulysses_respirator_nv",
+    "am_glassesblackrimmed_tinted_nv",
+    "am_shades_nv"
+]];
+
+//Item *set* definitions. These are added in their entirety to unit loadouts. No randomisation is applied.
+_loadoutData set ["items_medical_basic", ["BASIC"] call A3A_fnc_itemset_medicalSupplies];
+_loadoutData set ["items_medical_standard", ["STANDARD"] call A3A_fnc_itemset_medicalSupplies];
+_loadoutData set ["items_medical_medic", ["MEDIC"] call A3A_fnc_itemset_medicalSupplies];
+_loadoutData set ["items_miscEssentials", [] call A3A_fnc_itemset_miscEssentials];
+
+//Unit type specific item sets. Add or remove these, depending on the unit types in use.
+_loadoutData set ["items_squadLeader_extras", []];
+_loadoutData set ["items_rifleman_extras", []];
+_loadoutData set ["items_medic_extras", []];
+_loadoutData set ["items_grenadier_extras", []];
+_loadoutData set ["items_explosivesExpert_extras", ["ToolKit", "MineDetector"]];
+_loadoutData set ["items_engineer_extras", ["ToolKit", "MineDetector"]];
+_loadoutData set ["items_lat_extras", []];
+_loadoutData set ["items_at_extras", []];
+_loadoutData set ["items_aa_extras", []];
+_loadoutData set ["items_machineGunner_extras", []];
+_loadoutData set ["items_marksman_extras", []];
+_loadoutData set ["items_sniper_extras", []];
+_loadoutData set ["items_police_extras", []];
+_loadoutData set ["items_crew_extras", []];
+_loadoutData set ["items_unarmed_extras", []];
+
+_loadoutData set ["glasses", []];
+_loadoutData set ["goggles", []];
+
+//TODO - ACE overrides for misc essentials, medical and engineer gear
+
+///////////////////////////////////////
+//    Special Forces Loadout Data    //
+///////////////////////////////////////
+
+private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData;
+// BoS Special Forces (Paladins / Heavy Recon)
+_sfLoadoutData set ["uniforms", ["AFO_U_CombatArmor_BOS"]];
+_sfLoadoutData set ["vests", ["am_swat_black_vest"]];
+_sfLoadoutData set ["Hvests", ["am_swat_black_vest"]];
+_sfLoadoutData set ["glVests", ["am_swat_black_vest"]];
+_sfLoadoutData set ["backpacks", ["AM_BigBagInvis"]];
+_sfLoadoutData set ["helmets", ["AFO_H_CombatHelmet_Masked_BOS"]];
+_sfLoadoutData set ["slRifles", ["AM_ServiceRifleMk2_GL"]];
+_sfLoadoutData set ["rifles", ["AM_LaserRifle_Black", "AM_LaserRifle_Mk2"]];
+_sfLoadoutData set ["carbines", ["AM_AER14", "AM_HoloRifle"]];
+_sfLoadoutData set ["machineGuns", ["AM_Gatling_Laser_Base", "AM_MinigunHS"]];
+_sfLoadoutData set ["marksmanRifles", ["AM_HKG28"]];
+_sfLoadoutData set ["sniperRifles", ["AM_AntiEverythingRifle"]];
+
+/////////////////////////////////
+//    Elite Loadout Data       //
+/////////////////////////////////
+
+private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData;
+// BoS Elite (Knights / Officers)
+_eliteLoadoutData set ["uniforms", ["AFO_U_CombatArmor_BOS_Knight"]];
+_eliteLoadoutData set ["vests", ["am_swat_black_vest", "am_swat_vest"]];
+_eliteLoadoutData set ["Hvests", ["am_swat_black_vest"]];
+_eliteLoadoutData set ["glVests", ["am_swat_vest"]];
+_eliteLoadoutData set ["backpacks", ["AM_BigBagInvis"]];
+_eliteLoadoutData set ["helmets", ["AFO_H_CombatHelmet_BOS", "AFO_H_CombatHelmet_Masked_BOS"]];
+_eliteLoadoutData set ["rifles", ["AM_LaserRifleAuto", "AM_LaserRifle_Black"]];
+_eliteLoadoutData set ["machineGuns", ["AM_Minigun_Base", "AM_Gatling_Laser_P_Base"]];
+
+/////////////////////////////////
+//    Military Loadout Data    //
+/////////////////////////////////
+
+private _militaryLoadoutData = _loadoutData call _fnc_copyLoadoutData;
+// BoS Regular Army (Initiates / Field Soldiers)
+_militaryLoadoutData set ["uniforms", ["AFO_U_CombatArmor_BOS_Initiate"]];
+_militaryLoadoutData set ["vests", ["am_swat_vest"]];
+_militaryLoadoutData set ["backpacks", ["AM_AvBagInvis"]];
+_militaryLoadoutData set ["helmets", ["AFO_H_CombatHelmet_BOS"]];
+_militaryLoadoutData set ["slRifles", ["AM_ServiceRifle_N_MRCO"]];
+_militaryLoadoutData set ["rifles", ["AM_LaserRifleAuto_GRA", "AM_Laser_Musket"]];
+_militaryLoadoutData set ["carbines", ["AM_HoloRifle_Nugz"]];
+_militaryLoadoutData set ["machineGuns", ["AM_LMG"]];
+_militaryLoadoutData set ["marksmanRifles", ["AM_rangerCarbine_Veteran", "AM_HuntingRifle_mod_4k"]];
+_militaryLoadoutData set ["sniperRifles", ["AM_SniperRifleGobi", "AM_AntiMatRifle"]];
+
+///////////////////////////////
+//    Police Loadout Data    //
+///////////////////////////////
+
+private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData;
+// Scribes / Base Security 
+_policeLoadoutData set ["uniforms", ["AM_Uniform_FormalSuit_Black_uniform"]];
+_policeLoadoutData set ["vests", ["am_swat_black_mp_vest"]];
+_policeLoadoutData set ["helmets", ["AM_Beret_02_BOS_Blk", "AM_Beret_02_BOS_Blu", "AM_Beret_02_BOS_Gry"]];
+_policeLoadoutData set ["SMGs", ["AM_10mmSMG", "AM_10mmSMGB", "AM_9mmSMG"]];
+_policeLoadoutData set ["sidearms", ["AM_10mmPistol", "AM_LaserPistol"]];
+
+////////////////////////////////
+//    Militia Loadout Data    //
+////////////////////////////////
+
+private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData;
+// Local Slog / Outpost Conscripts / Allied Locals
+_militiaLoadoutData set ["uniforms", ["AM_Uniform_DesertCoat_S", "AM_Uniform_CowboyOutfit_DeepBlack"]];
+_militiaLoadoutData set ["vests", []]; // No armor for early tier raider/militia types
+_militiaLoadoutData set ["backpacks", ["AM_AvBagInvis"]];
+_militiaLoadoutData set ["helmets", ["am_cowboyHat_Bent_black", "AM_Cap_Grey", "AM_Cap_Green"]];
+_militiaLoadoutData set ["slRifles", ["AM_ServiceRifleMk2"]];
+_militiaLoadoutData set ["rifles", ["AM_Laser_Musket"]];
+_militiaLoadoutData set ["carbines", ["AM_9mmSMG"]];
+_militiaLoadoutData set ["machineGuns", ["AM_LMG"]];
+_militiaLoadoutData set ["marksmanRifles", ["AM_HuntingRifle_mod_4k"]];
+_militiaLoadoutData set ["sidearms", ["AM_M1911HD", "AM_ThatGun"]];
+
+//////////////////////////
+//    Misc Loadouts     //
+//////////////////////////
+
+private _crewLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
+_crewLoadoutData set ["uniforms", ["AFO_U_CombatArmor_BOS_Initiate"]];
+_crewLoadoutData set ["vests", ["am_swat_vest"]];
+_crewLoadoutData set ["helmets", ["AFO_H_CombatHelmet_BOS"]];
+
+private _pilotLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
+_pilotLoadoutData set ["uniforms", ["AFO_U_CombatArmor_BOS_Initiate"]];
+_pilotLoadoutData set ["vests", ["am_swat_vest"]];
+_pilotLoadoutData set ["helmets", ["AM_Beret_02_BOS_Blk"]];
