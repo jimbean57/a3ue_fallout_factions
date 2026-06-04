@@ -9,7 +9,7 @@ class CfgFunctions
             {
                 file = QPATHTOFOLDER(Missions\fn_as_Official.sqf);
             };
-        };
+        }; // ASDJKHSDKHBFGJKHLID
     };
 
     //your own functions should be kept here
