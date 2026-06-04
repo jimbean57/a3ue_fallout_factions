@@ -18,7 +18,7 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 ["spawnMarkerName", format [localize "STR_supportcorridor", "AAF"]] call _fnc_saveToTemplate; 			
 
 ["flag", "Flag_White_F"] call _fnc_saveToTemplate; 						
-["flagTexture", "a3\data_f\flags\flag_white_co.paa"] call _fnc_saveToTemplate; 				
+["flagTexture", QPATHTOFOLDER(Templates\Fallout\bos_flag.paa)"] call _fnc_saveToTemplate; 				
 ["flagMarkerType", "flag_NATO"] call _fnc_saveToTemplate; 			
 
 //////////////////////////
