@@ -1,4 +1,7 @@
 //these variables determine whether specified dlcs are loaded
+
+//Old File name: Vanilla_AI_AAF_New.SQF
+
 private _hasWs = "ws" in A3A_enabledDLC;
 private _hasMarksman = "mark" in A3A_enabledDLC;
 private _hasLawsOfWar = "orange" in A3A_enabledDLC;
