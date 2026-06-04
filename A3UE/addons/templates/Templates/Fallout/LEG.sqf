@@ -1,7 +1,8 @@
-// ncr_faction.sqf
-// New California Republic faction template for Antistasi
-// Based on Fallout: New Vegas lore — organized military force, conventional firearms,
-// NCR Rangers as special forces, Veteran Rangers as elite units.
+// legion_faction.sqf
+// Caesar's Legion faction template for Antistasi
+// Based on Fallout: New Vegas lore — low-tech, melee-heavy, brutal Roman-themed army.
+// Basic troops carry melee weapons and primitive firearms. Only upper ranks (Centurions,
+// Praetorians, Legate) carry quality ranged weapons. NO energy weapons ever.
 // Old File base: bos_faction.sqf
 
 private _hasWs = "ws" in A3A_enabledDLC;
@@ -16,10 +17,10 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 //   Side Information   //
 //////////////////////////
 
-["name", "New California Republic"] call _fnc_saveToTemplate;
-["spawnMarkerName", format [localize "STR_supportcorridor", "NCR"]] call _fnc_saveToTemplate;
+["name", "Caesar's Legion"] call _fnc_saveToTemplate;
+["spawnMarkerName", format [localize "STR_supportcorridor", "Legion"]] call _fnc_saveToTemplate;
 
-["flag", "flag_NCR"] call _fnc_saveToTemplate;
+["flag", "Flag_White_F"] call _fnc_saveToTemplate;
 ["flagTexture", "a3\data_f\flags\flag_white_co.paa"] call _fnc_saveToTemplate;
 ["flagMarkerType", "flag_NATO"] call _fnc_saveToTemplate;
 
@@ -27,43 +28,48 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 //       Vehicles       //
 //////////////////////////
 
+// Legion doesn't run much mechanized — they on horses and on foot mostly.
+// What few vehicles they use are captured or repurposed.
 ["ammobox", "skyrix_chryslusM_355_Ammo"] call _fnc_saveToTemplate;
-["surrenderCrate", "Box_NATO_Wps_F"] call _fnc_saveToTemplate;
-["equipmentBox", "Box_NATO_Equip_F"] call _fnc_saveToTemplate;
+["surrenderCrate", "Box_IND_Wps_F"] call _fnc_saveToTemplate;
+["equipmentBox", "Box_IND_Equip_F"] call _fnc_saveToTemplate;
 
 ["smallBunker", "fallout_turret_wall_180"] call _fnc_saveToTemplate;
 ["sandbag", "fallout_turret_wall"] call _fnc_saveToTemplate;
 ["sandbagRound", "fallout_turret_wall_90"] call _fnc_saveToTemplate;
 
-["vehiclesBasic", ["AM_HMMWV_01", "AM_Buggy", "B_BFMRRaiders_Old_World_Pick_Up_01"]] call _fnc_saveToTemplate;
-["vehiclesLightUnarmed", ["AM_HMMWV_01", "Fallout_corvega", "AM_Fallout_corvega_02", "AM_BTRGAZ"]] call _fnc_saveToTemplate;
-["vehiclesLightArmed", ["B_M66A4_minigun", "B_M66A4_minigun_M", "SC_AR_Mrap", "SC_SE_Mrap"]] call _fnc_saveToTemplate;
-["vehiclesTrucks", ["SC_Gator_TO_AR", "SC_Gator_TO_SE", "SC_Gator_TC_AR", "SC_Gator_TC_SE", "AM_zil167"]] call _fnc_saveToTemplate;
-["vehiclesCargoTrucks", ["SC_Gator_FB_AR", "SC_Gator_FB_SE", "AM_Flatbed_Truck", "AM_Transp_Truck"]] call _fnc_saveToTemplate;
+// Vehicles are minimal — Legion captures what they can but prefers foot movement
+["vehiclesBasic", ["AM_Buggy", "B_BFMRRaiders_Old_World_Pick_Up_01"]] call _fnc_saveToTemplate;
+["vehiclesLightUnarmed", ["AM_Buggy", "B_BFMRRaiders_Old_World_Pick_Up_01", "B_BFMRRaiders_Old_World_Highwayman_01"]] call _fnc_saveToTemplate;
+["vehiclesLightArmed", ["B_G_Offroad_01_armed_F", "Max_res_Offroad_Arm"]] call _fnc_saveToTemplate;
+["vehiclesTrucks", ["B_BFMRRaiders_Old_World_Bus_01", "B_BFMRRaiders_Old_World_GMC_Vandura_01"]] call _fnc_saveToTemplate;
+["vehiclesCargoTrucks", ["B_BFMRRaiders_Old_World_Bus_01", "AM_Transp_Truck"]] call _fnc_saveToTemplate;
 ["vehiclesAmmoTrucks", ["skyrix_chryslusM_355_Ammo"]] call _fnc_saveToTemplate;
 ["vehiclesRepairTrucks", ["skyrix_chryslusM_355_Repair"]] call _fnc_saveToTemplate;
 ["vehiclesFuelTrucks", ["skyrix_chryslusM_355_Fuel"]] call _fnc_saveToTemplate;
 ["vehiclesMedical", ["skyrix_chryslusM_355"]] call _fnc_saveToTemplate;
-["vehiclesAPCs", ["SC_SaurusAPC_SE", "SC_SaurusAPC_Unarmed_SE", "AM_APC"]] call _fnc_saveToTemplate;
-["vehiclesTanks", ["15thNCR_Tank_BOS", "SC_AR_MBT", "SC_SE_MBT"]] call _fnc_saveToTemplate;
-["vehiclesAA", ["SC_SaurusAPC_AA_SE"]] call _fnc_saveToTemplate;
-["vehiclesLightAPCs", ["SC_Ferret_AR", "SC_Ferret_AC"]] call _fnc_saveToTemplate;
-["vehiclesIFVs", ["SC_AR_IFV", "SC_SE_IFV"]] call _fnc_saveToTemplate;
+// Legion has very limited armor — they mostly captured gear
+["vehiclesAPCs", ["AM_APC"]] call _fnc_saveToTemplate;
+["vehiclesTanks", []] call _fnc_saveToTemplate;
+["vehiclesAA", []] call _fnc_saveToTemplate;
+["vehiclesLightAPCs", []] call _fnc_saveToTemplate;
+["vehiclesIFVs", []] call _fnc_saveToTemplate;
 
-["vehiclesTransportBoats", ["AM_zil167"]] call _fnc_saveToTemplate;
+["vehiclesTransportBoats", []] call _fnc_saveToTemplate;
 ["vehiclesGunBoats", []] call _fnc_saveToTemplate;
-["vehiclesAmphibious", ["AM_zil167"]] call _fnc_saveToTemplate;
+["vehiclesAmphibious", []] call _fnc_saveToTemplate;
 
-["vehiclesPlanesCAS", ["SC_Fixed_Bomber_01"]] call _fnc_saveToTemplate;
+// Legion has no air assets — Caesar rejects pre-war tech
+["vehiclesPlanesCAS", []] call _fnc_saveToTemplate;
 ["vehiclesPlanesAA", []] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", []] call _fnc_saveToTemplate;
 
-["vehiclesHelisLight", ["B_BFMRRaiders_Old_World_News_Helicopter_01"]] call _fnc_saveToTemplate;
-["vehiclesHelisTransport", ["B_BFMRRaiders_Old_World_News_Helicopter_01"]] call _fnc_saveToTemplate;
-["vehiclesHelisLightAttack", ["B_BFMRRaiders_Old_World_News_Helicopter_01_Armed_01"]] call _fnc_saveToTemplate;
-["vehiclesHelisAttack", ["B_BFMRRaiders_Old_World_News_Helicopter_01_Armed_01"]] call _fnc_saveToTemplate;
-["vehiclesAirborne", ["B_BFMRRaiders_Old_World_News_Helicopter_01", "B_BFMRRaiders_Old_World_News_Helicopter_01_Armed_01"]] call _fnc_saveToTemplate;
-["vehiclesAirPatrol", ["B_BFMRRaiders_Old_World_News_Helicopter_01", "B_BFMRRaiders_Old_World_News_Helicopter_01_Armed_01"]] call _fnc_saveToTemplate;
+["vehiclesHelisLight", []] call _fnc_saveToTemplate;
+["vehiclesHelisTransport", []] call _fnc_saveToTemplate;
+["vehiclesHelisLightAttack", []] call _fnc_saveToTemplate;
+["vehiclesHelisAttack", []] call _fnc_saveToTemplate;
+["vehiclesAirborne", []] call _fnc_saveToTemplate;
+["vehiclesAirPatrol", []] call _fnc_saveToTemplate;
 
 ["vehiclesArtillery", []] call _fnc_saveToTemplate;
 ["magazines", createHashMapFromArray []] call _fnc_saveToTemplate;
@@ -71,17 +77,19 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 ["uavsAttack", []] call _fnc_saveToTemplate;
 ["uavsPortable", []] call _fnc_saveToTemplate;
 
-["vehiclesMilitiaLightArmed", ["B_G_Offroad_01_armed_F", "Max_res_Offroad_Arm", "B_BFMRRaiders_LSV_Buggy_01"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaTrucks", ["B_BFMRRaiders_Old_World_Bus_01", "B_BFMRRaiders_Old_World_GMC_Vandura_01", "B_BFMRRaiders_Old_World_Van_01"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaCars", ["Max_res_Offroad", "B_BFMRRaiders_Old_World_Fusion_Flea_01", "B_BFMRRaiders_Old_World_Pick_Up_01", "B_BFMRRaiders_Old_World_Highwayman_01", "B_BFMRRaiders_Old_World_Corvega_Sedan_01"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaAPCs", ["SC_Ferret_AR"]] call _fnc_saveToTemplate;
+// Militia: captured pre-war civvy vehicles and old trucks
+["vehiclesMilitiaLightArmed", ["B_G_Offroad_01_armed_F"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaTrucks", ["B_BFMRRaiders_Old_World_Bus_01", "B_BFMRRaiders_Old_World_Van_01"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaCars", ["B_BFMRRaiders_Old_World_Pick_Up_01", "B_BFMRRaiders_Old_World_Highwayman_01", "B_BFMRRaiders_Old_World_Corvega_Sedan_01"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaAPCs", []] call _fnc_saveToTemplate;
 
-["vehiclesPolice", ["AM_Fallout_corvega_02_police"]] call _fnc_saveToTemplate;
+["vehiclesPolice", ["B_BFMRRaiders_Old_World_Pick_Up_01"]] call _fnc_saveToTemplate;
 
-["staticMGs", ["B_BFMRRaiders_M2_01", "B_BFMRRaiders_M2_Low_01", "fallout_turret", "fallout_turret_auto"]] call _fnc_saveToTemplate;
-["staticAT", ["fallout_turret_wall", "B_static_AT_F"]] call _fnc_saveToTemplate;
-["staticAA", ["SC_SaurusAPC_AA_SE"]] call _fnc_saveToTemplate;
-["staticMortars", ["B_Fallout_Minutemen_82mm_Mortar_01", "B_BFMRRaiders_Mk6_Mortar_01"]] call _fnc_saveToTemplate;
+// Legion uses primitive static defenses — they build fortifications but nothing fancy
+["staticMGs", ["B_BFMRRaiders_M2_01", "B_BFMRRaiders_M2_Low_01", "fallout_turret"]] call _fnc_saveToTemplate;
+["staticAT", ["fallout_turret_wall"]] call _fnc_saveToTemplate;
+["staticAA", []] call _fnc_saveToTemplate;
+["staticMortars", ["B_Fallout_Minutemen_82mm_Mortar_01"]] call _fnc_saveToTemplate;
 ["staticHowitzers", []] call _fnc_saveToTemplate;
 
 ["mortarMagazineHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
@@ -89,6 +97,7 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 ["mortarMagazineFlare", "8Rnd_82mm_Mo_Flare_white"] call _fnc_saveToTemplate;
 ["howitzerMagazineHE", ""] call _fnc_saveToTemplate;
 
+// Legion loves mines — they booby-trap everything
 ["minefieldAT", ["ATMine"]] call _fnc_saveToTemplate;
 ["minefieldAPERS", ["APERSMine", "APERSTripMine"]] call _fnc_saveToTemplate;
 
@@ -105,33 +114,30 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 ///  Identities   ///
 /////////////////////
 
-// NCR pulls from across California — diverse mix of faces
+// Legion is drawn from conquered tribes across the Southwest — diverse but brutal
 ["faces", [
     "WhiteHead_01",
     "WhiteHead_02",
     "WhiteHead_03",
-    "WhiteHead_04",
-    "WhiteHead_05",
     "GreekHead_A3_02",
     "GreekHead_A3_03",
-    "GreekHead_A3_04",
+    "GreekHead_A3_05",
     "GreekHead_A3_06",
-    "AsianHead_A3_01",
-    "AsianHead_A3_02",
     "AfricanHead_A3_01",
     "AfricanHead_A3_02",
-    "AfricanHead_A3_03"
+    "AsianHead_A3_01"
 ]] call _fnc_saveToTemplate;
 
-["voices", ["Male01ENG", "Male02ENG", "Male03ENG", "Male04ENG", "Male05ENG", "Male06ENG", "Male07ENG", "Male08ENG", "Male10ENG", "Male11ENG", "Male12ENG"]] call _fnc_saveToTemplate;
+["voices", ["Male01ENG", "Male02ENG", "Male03ENG", "Male04ENG", "Male05ENG", "Male06ENG", "Male07ENG", "Male08ENG"]] call _fnc_saveToTemplate;
 
-// Rangers and special forces — more selective group
-["sfVoices", ["Male01ENG", "Male02ENG", "Male03ENG", "Male04ENG", "Male05ENG"]] call _fnc_saveToTemplate;
+// Frumentarii (SF) — Caesar's spies. They undercover, they blend in
+["sfVoices", ["Male01ENG", "Male02ENG", "Male03ENG"]] call _fnc_saveToTemplate;
 ["sfFaces", []] call _fnc_saveToTemplate;
 ["milVoices", []] call _fnc_saveToTemplate;
 ["milFaces", []] call _fnc_saveToTemplate;
 ["polVoices", []] call _fnc_saveToTemplate;
 ["polFaces", []] call _fnc_saveToTemplate;
+// Elite: Praetorian Guard voices — the hardest of the hard
 ["eliteVoices", ["Male01ENG", "Male02ENG", "Male03ENG"]] call _fnc_saveToTemplate;
 ["eliteFaces", []] call _fnc_saveToTemplate;
 
@@ -146,72 +152,81 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 //////////////////////////
 
 // ==================================================================================
-// WEAPON ASSIGNMENT PHILOSOPHY (NCR):
+// WEAPON ASSIGNMENT PHILOSOPHY (LEGION):
 //
-// The NCR is a conventional military force. Their grunts run the Service Rifle
-// (AM_serviceRifle / AM_ServiceRifleMk2) as their standard issue — that's the
-// AR-15 pattern rifle straight outta the game. Carbines are the Assault Carbine
-// (AM_AssaultCarbine) for closer-range roles. Marksmen get the Hunting Rifle or
-// Marksman Rifle. Rangers — the real ones, Desert Rangers — run the Ranger Carbine
-// (AM_rangerCarbine_Veteran). Snipers use the Gobi Campaign Scout Rifle
-// (AM_SniperRifleGobi). Anti-materiel is the AM Rifle (AM_AntiMatRifle).
+// Caesar's Legion is LOW-TECH by DESIGN. Caesar forbids advanced tech — the whole
+// ideology is about returning to pre-gunpowder strength through discipline and
+// numbers. The hierarchy goes:
 //
-// Pistols are the standard .45 (AM_M1911HD) and .357 revolver (AM_357Rev).
-// SMGs go to police/support roles (AM_9mmSMG, AM_10mmSMG).
-// Machine guns: BAR (AM_BAR) and M60 (AM_M60) for regular troops,
-//               Minigun (AM_Minigun_Base) limited to vehicle crews / SF only.
-// Launchers: Bazooka (AM_bazooka) for LAT, Missile Launcher (AM_launch_MissileLauncherSight)
-//            for full AT. Fat Man (AM_launch_Fatman) is STRICTLY special forces only.
-// Grenade launchers: Service Rifle GL (AM_ServiceRifle_GL) as standard UGL.
+// RECRUITS/EXPLORERS: Melee only (machetes, spears, knives, sledgehammers)
+//                     Plus maybe a sawed-off shotgun or pipe gun as backup
 //
-// No energy weapons for regular NCR — that's faction identity.
+// SOLDIERS (Prime): Cowboy Repeaters, hunting rifles, lever-action shotguns,
+//                   revolvers. Some carry SMGs but mostly slave to ranged fire.
+//
+// VETERANS: Better firearms — assault carbines, hunting rifles, tommy guns,
+//           marksman-grade weapons. Centurions carry quality pistols + rifles.
+//
+// CENTURION/PRAETORIAN (Elite/SF): The best non-energy weapons available —
+//                                  Anti-Materiel Rifle, Marksman, .357 unique,
+//                                  Grenade Rifles, Assault Carbine GRA variants.
+//
+// LEGATE LANIUS (Officer): carries the best melee + best firearms
+//
+// FRUMENTARII (Special Forces): These boys operate in plain clothes, carrying
+//                                concealable weapons — pistols, pipe guns, SMGs.
+//                                They're spies. No heavy weapons. No Fat Man.
+//                                NOBODY in the Legion gets the Fat Man — Caesar
+//                                despises that level of pre-war tech dependence.
+//
+// NO ENERGY WEAPONS — EVER. That's Caesar's whole thing.
+// NO FAT MAN for Legion under any circumstances.
 // ==================================================================================
 
 private _loadoutData = call _fnc_createLoadoutData;
 
 // --- Primary Weapons ---
-// Squad leaders carry the Mk2 Service Rifle with optic — they got the good loadout
-_loadoutData set ["slRifles", ["AM_ServiceRifleMk2", "AM_serviceRifle_N_MRCO"]];
-// Standard rifle pool: Service Rifle variants — what every NCR trooper carries
-_loadoutData set ["rifles", ["AM_serviceRifle", "AM_serviceRifleN", "AM_ServiceRifleMk2", "AM_serviceRifleB"]];
-// Carbines: Assault Carbine and Trail Carbine for CQB/scout roles
-_loadoutData set ["carbines", ["AM_AssaultCarbine", "AM_AssaultCarbineOlive", "AM_TrailCarbine", "AM_TrailCarbineW"]];
-// Underbarrel GL on Service Rifle — standard grenadier load
-_loadoutData set ["grenadeLaunchers", ["AM_ServiceRifle_GL", "AM_ServiceRifleMk2_GL"]];
-// Standalone grenade launchers: M79 for designated grenadiers
-_loadoutData set ["designatedGrenadeLaunchers", ["AM_M79", "AM_M79_Merc"]];
-// SMGs: 9mm and 10mm for support/police
-_loadoutData set ["SMGs", ["AM_9mmSMG", "AM_10mmSMG", "AM_10mmSMGB"]];
-// MGs: BAR and M60 are the NCR's standard belt-fed support weapons
-_loadoutData set ["machineGuns", ["AM_BAR", "AM_M60", "AM_LMG"]];
-// Marksman: Hunting Rifle (modded) and the Marksman Rifle
-_loadoutData set ["marksmanRifles", ["AM_HuntingRifle_mod_4k", "AM_Marksman", "AM_rangerCarbine_New"]];
-// Snipers: Gobi Scout and Anti-Materiel Rifle for heavy sniper
-_loadoutData set ["sniperRifles", ["AM_SniperRifleGobi", "AM_AntiMatRifle"]];
+// Squad leaders: Centurions — carry the better rifles, maybe a GL
+_loadoutData set ["slRifles", ["AM_CowboyRepeater", "AM_AssaultCarbine", "AM_G3AssaultRifle"]];
+// Standard rifles: Cowboy Repeater and hunting rifles — Legion staples
+_loadoutData set ["rifles", ["AM_CowboyRepeater", "AM_CowboyRepeaterB", "AM_HuntingRifle", "AM_HuntingRifle_Mod"]];
+// Carbines: basic assault carbine, caravan shotgun, lever shotgun for closer range
+_loadoutData set ["carbines", ["AM_CaravanShotgun", "AM_LeverShotgun", "AM_CARifle"]];
+// Grenade launchers: M79 for the few Legion soldiers who use them
+_loadoutData set ["grenadeLaunchers", ["AM_M79", "AM_M79_Merc"]];
+// Designated grenade launchers same — Legion don't have many
+_loadoutData set ["designatedGrenadeLaunchers", ["AM_M79"]];
+// SMGs: Tommy guns — captured or looted, Legion uses them when found
+_loadoutData set ["SMGs", ["AM_Tommygun", "AM_TommygunS", "AM_9mmSMG"]];
+// MGs: BAR and M1919 — heavy support for Legion's assault columns
+_loadoutData set ["machineGuns", ["AM_BAR", "AM_M1919", "AM_LMG"]];
+// Marksman: Hunting Rifle variants and the basic Marksman rifle
+_loadoutData set ["marksmanRifles", ["AM_HuntingRifle_mod_4k", "AM_Marksman", "AM_CowboyRepeater4k_Scout"]];
+// Snipers: Anti-Mat Rifle and Gobi — only veteran snipers
+_loadoutData set ["sniperRifles", ["AM_AntiMatRifle", "AM_SniperRifleGobi"]];
 
 // --- Launchers ---
-// Light AT: Bazooka — old school but NCR makes do
+// Light AT: Bazooka — old school, Legion would use these captured
 _loadoutData set ["lightATLaunchers", ["AM_bazooka"]];
 _loadoutData set ["lightHELaunchers", []];
-// Standard AT: Missile Launcher with sight
-_loadoutData set ["ATLaunchers", ["AM_launch_MissileLauncherSight", "AM_m72"]];
-// Guided/missile AT: Reserved for experienced AT soldiers
-_loadoutData set ["missileATLaunchers", ["AM_Hellstorm"]];
-// AA: Missile Launcher with AA tracking sight
+// Standard AT: Basic missile launcher — Legion hates this tech but uses captured ones
+_loadoutData set ["ATLaunchers", ["AM_bazooka", "AM_m72"]];
+// Guided AT: Very rare for Legion
+_loadoutData set ["missileATLaunchers", []];
+// AA: Also very rare
 _loadoutData set ["AALaunchers", ["AM_launch_MissileLauncherSight_Shark"]];
 
 // --- Sidearms ---
-// M1911 .45 and .357 revolver — classic NCR pistols
-_loadoutData set ["sidearms", ["AM_M1911HD", "AM_357Rev", "AM_357Rev_HD", "AM_M1911"]];
+// .357 revolver is THE Legion pistol. Also .45 and 12.7mm for higher ranks
+_loadoutData set ["sidearms", ["AM_357Rev", "AM_357RevShort", "AM_357Rev_HD", "AM_M1911"]];
 
 // --- Explosives ---
-// No AT mines standard — NCR uses them but sparingly
+// Legion uses dynamite and planted explosives, not fancy ordnance
+// No Fat Man — EVER — for Legion
 _loadoutData set ["ATMines", []];
 _loadoutData set ["APMines", []];
-// Light explosives: standard demo charges
 _loadoutData set ["lightExplosives", []];
-// Heavy explosives: nothing this extreme in standard loadout
-_loadoutData set ["heavyExplosives", []];
+_loadoutData set ["heavyExplosives", []]; // NO Fat Man for Legion period
 
 // --- Grenades ---
 _loadoutData set ["antiInfantryGrenades", []];
@@ -225,47 +240,48 @@ _loadoutData set ["watches", ["ItemWatch"]];
 _loadoutData set ["compasses", ["ItemCompass"]];
 _loadoutData set ["radios", ["ItemRadio"]];
 _loadoutData set ["gpses", ["ItemGPS"]];
-// NCR troopers use NVGs but not standard issue — officers and scouts carry them
-_loadoutData set ["NVGs", ["am_nvg_anpvs7"]];
-_loadoutData set ["binoculars", ["AM_binoculars", "AM_binoculars_small"]];
+// Legion don't trust pre-war tech — very limited NVGs
+_loadoutData set ["NVGs", []];
+_loadoutData set ["binoculars", ["AM_binoculars_small"]];
 _loadoutData set ["rangefinders", ["Rangefinder"]];
 
 // --- Special Role Gear ---
-// Traitor: plain wasteland clothes — they blending in
-_loadoutData set ["traitorUniforms", ["armor_ncr_trooper_clothes_green_medic_uniform", "wastelandclothing01_uniform"]];
+// Traitor: Marked men / disgraced Legion — wearing rags and scraps
+_loadoutData set ["traitorUniforms", ["wastelandclothing01_uniform", "wastelandclothing03_uniform", "legionexplorer_uniform"]];
 _loadoutData set ["traitorVests", []];
-_loadoutData set ["traitorHats", ["am_cowboyHat_Bent_brown", "am_cowboyHat_Bent_beige", "rangerhat"]];
+_loadoutData set ["traitorHats", ["legionbandana", "am_cowboyHat_Bent_brown", "jessupbandana"]];
 
-// Officer: dress uniform, formal — NCR officers run a tighter look
-_loadoutData set ["officerUniforms", ["ncr_officer_coat_uniform", "generaloliver_uniform"]];
-_loadoutData set ["officerVests", ["am_swat_black_mp_vest"]];
-_loadoutData set ["officerHats", ["AM_Beret_02_NCR_Bear_Olv", "AM_Beret_02_NCR_Bear_Blk", "AM_Beret_02_NCRAF"]];
+// Officer: Caesar's officers — Legate-tier, the finest Legion armor
+_loadoutData set ["officerUniforms", ["legate_armor_uniform", "centurion_uniform", "caesar_uniform"]];
+_loadoutData set ["officerVests", []];
+_loadoutData set ["officerHats", ["legate_helm", "centurion_helmet", "legionfeatherhead01"]];
 
-// Cloak: undercover NCR operative — plain clothes
-_loadoutData set ["cloakUniforms", ["1950stylecasual01_uniform", "wasteland_doctor_01_uniform"]];
+// Cloak: Frumentarii operatives — plain wasteland clothes, blending in
+_loadoutData set ["cloakUniforms", ["wasteland_doctor_01_uniform", "wastelandclothing01_uniform", "1950stylecasual01_uniform"]];
 _loadoutData set ["cloakVests", []];
-_loadoutData set ["cloakRifles", ["AM_AssaultCarbine"]];
-_loadoutData set ["cloakCarbines", ["AM_TrailCarbine"]];
-_loadoutData set ["cloakSidearms", ["AM_M1911HD"]];
-_loadoutData set ["cloakGlasses", ["am_shades_nv", "am_glassesblackrimmed_tinted_nv"]];
+// Frumentarii carry concealable weapons only
+_loadoutData set ["cloakRifles", ["AM_CARifle"]];
+_loadoutData set ["cloakCarbines", ["AM_9mmSMG"]];
+_loadoutData set ["cloakSidearms", ["AM_357Rev", "AM_M1911"]];
+_loadoutData set ["cloakGlasses", []];
 
 // --- Standard Troop Uniforms ---
-// NCR trooper armor variants — the khaki and tan look of the Republic
-_loadoutData set ["uniforms", ["armor_ncr_trooper_01_uniform", "armor_ncr_trooper_grey_uniform", "armor_ncr_trooper_02_uniform", "armor_ncr_trooper_Woodland_uniform"]];
-_loadoutData set ["slUniforms", ["armor_ncr_trooper_02_uniform", "armor_ncr_trooper_01_uniform"]];
-_loadoutData set ["vests", ["ncr_excalibur_vest_01", "ncr_excalibur_vest_02", "V_TacVest_khk", "V_TacVest_brn"]];
-_loadoutData set ["Hvests", ["ncr_excalibur_vest_02", "V_PlateCarrier1_rgr"]];
-_loadoutData set ["glVests", ["ncr_excalibur_vest_01"]];
-_loadoutData set ["sniVests", ["ncr_excalibur_vest_black_01", "V_PlateCarrierSpec_rgr"]];
-_loadoutData set ["backpacks", ["AM_AvBagInvis", "AM_BigBagInvis"]];
+// Legion armor variants: Recruit, Prime, Veteran
+_loadoutData set ["uniforms", ["legion_recruit_uniform", "legionprime_uniform", "legionveteran_uniform", "legionexplorer_uniform"]];
+_loadoutData set ["slUniforms", ["legionveteran_uniform", "centurion_uniform"]];
+_loadoutData set ["vests", []]; // Legion armor is the uniform — no separate vests
+_loadoutData set ["Hvests", []];
+_loadoutData set ["glVests", []];
+_loadoutData set ["sniVests", []];
+_loadoutData set ["backpacks", ["AM_AvBagInvis", "AM_SmallBagInvis"]];
 _loadoutData set ["longRangeRadios", ["B_RadioBag_01_mtp_F"]];
-_loadoutData set ["atBackpacks", ["AM_BigBagInvis"]];
-// Trooper helmets: M1 helmet variants — THE NCR signature look
-_loadoutData set ["helmets", ["m1_helmet_grn", "m1_helmet_snd", "m1_helmet_sage", "armor_ncr_trooper_helm", "armor_ncr_trooper_helm_02"]];
-_loadoutData set ["slHat", ["AM_Beret_02_NCR_Bear_Olv", "AM_Beret_02_NCR_Bear_Blk"]];
-_loadoutData set ["sniHats", ["combat_ranger_helmet02", "rangerhat", "rangerhat_black"]];
+_loadoutData set ["atBackpacks", ["AM_AvBagInvis"]];
+// Helmets: Legion wolf head, standard legion helmet, bandana headgear
+_loadoutData set ["helmets", ["legionhelmetbase", "legionwhitehelmetbase", "legionbandana", "legionwollfhead"]];
+_loadoutData set ["slHat", ["legionfeatherhead01", "legionfeatherhead02", "centurion_helmet"]];
+_loadoutData set ["sniHats", ["legionbandana", "legionhood"]];
 
-_loadoutData set ["facewear", ["am_glassesblackrimmed_tinted_nv", "am_shades_nv"]];
+_loadoutData set ["facewear", []];
 _loadoutData set ["glasses", []];
 _loadoutData set ["goggles", []];
 
@@ -294,123 +310,160 @@ _loadoutData set ["items_unarmed_extras", []];
 ///////////////////////////////////////
 //    Special Forces Loadout Data    //
 ///////////////////////////////////////
-// NCR Rangers — Desert Rangers / Veteran Rangers
-// These boys are THE apex predators of the wasteland. Ranger Carbine, Gobi,
-// and the Fat Man is EXCLUSIVE to SF only — no regular trooper touching that nuke
+// Frumentarii — Caesar's secret police and intelligence network
+// These ain't warriors in the traditional sense — they're spies and assassins
+// Operating undercover in wasteland civilian clothes
+// They carry concealable, conventional weapons only
+// Absolutely NO energy weapons, NO Fat Man, NO heavy ordnance
 
 private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_sfLoadoutData set ["uniforms", ["nv_ranger_uniform", "nv_ranger_black_uniform", "combat_ranger_uniform"]];
-_sfLoadoutData set ["vests", ["ncr_excalibur_vest_black_01", "ncr_excalibur_vest_black_02", "V_PlateCarrierSpec_rgr"]];
-_sfLoadoutData set ["Hvests", ["ncr_excalibur_vest_black_02", "V_PlateCarrierSpec_rgr"]];
-_sfLoadoutData set ["glVests", ["ncr_excalibur_vest_black_01"]];
-_sfLoadoutData set ["backpacks", ["AM_BigBagInvis"]];
-// Ranger helmet — that iconic look
-_sfLoadoutData set ["helmets", ["combat_ranger_helmet", "combat_ranger_helmet02", "combat_ranger_helmet03"]];
+// Plain clothes — they blending in out in the wasteland
+_sfLoadoutData set ["uniforms", ["wasteland_doctor_01_uniform", "wastelandclothing01_uniform", "1950stylecasual01_uniform", "wastelandsettler03_uniform"]];
+_sfLoadoutData set ["vests", []];
+_sfLoadoutData set ["Hvests", []];
+_sfLoadoutData set ["glVests", []];
+_sfLoadoutData set ["backpacks", ["AM_SmallBagInvis"]];
+// No helmets — they undercover
+_sfLoadoutData set ["helmets", ["am_cowboyHat_Bent_brown", "am_cowboyHat_Bent_beige", "AM_Cap_Grey", "AM_Cap_Green"]];
 
-// Rangers run the Ranger Carbine (Veteran) — this the real deal
-_sfLoadoutData set ["slRifles", ["AM_rangerCarbine_Veteran", "AM_ServiceRifleMk2_GL"]];
-_sfLoadoutData set ["rifles", ["AM_rangerCarbine_Veteran", "AM_rangerCarbine_New", "AM_ServiceRifleMk2"]];
-_sfLoadoutData set ["carbines", ["AM_AssaultCarbine", "AM_AssaultCarbine_GRA", "AM_TrailCarbine4k_Scout"]];
-_sfLoadoutData set ["machineGuns", ["AM_M60", "AM_BAR", "AM_LMG"]];
-_sfLoadoutData set ["marksmanRifles", ["AM_MarksmanAM", "AM_rangerCarbine_Veteran"]];
-_sfLoadoutData set ["sniperRifles", ["AM_SniperRifleGobi", "AM_AntiMatRifle", "AM_AntiEverythingRifle"]];
-// Fat Man: SPECIAL FORCES ONLY — only Rangers get mini nukes
-_sfLoadoutData set ["lightExplosives", ["AM_launch_Fatman"]];
-_sfLoadoutData set ["heavyExplosives", ["AM_launch_Fatman_Tallboy"]];
-// NVGs standard for Rangers
-_sfLoadoutData set ["NVGs", ["am_nvg_anpvs7", "am_ulysses_respirator_nv"]];
+// Frumentarii carry reliable conventional firearms — nothing that draws attention
+_sfLoadoutData set ["slRifles", ["AM_AssaultCarbine", "AM_CARifle"]];
+_sfLoadoutData set ["rifles", ["AM_AssaultCarbine", "AM_G3AssaultRifle", "AM_CARifle"]];
+_sfLoadoutData set ["carbines", ["AM_9mmSMG", "AM_10mmSMG", "AM_Tommygun"]];
+// Frumentarii marksmen use hunting rifles — concealable, accurate
+_sfLoadoutData set ["marksmanRifles", ["AM_HuntingRifle_mod_4k", "AM_Marksman"]];
+_sfLoadoutData set ["sniperRifles", ["AM_SniperRifleGobi", "AM_AntiMatRifle"]];
+// Machine guns available for ambushes
+_sfLoadoutData set ["machineGuns", ["AM_BAR", "AM_M1919"]];
+// Frumentarii sidearms: quality pistols, things that can be concealed
+_sfLoadoutData set ["sidearms", ["AM_357Rev_Lucky", "AM_357Rev_HD", "AM_M1911HD"]];
+// NO explosives for undercover operatives — too conspicuous
+_sfLoadoutData set ["lightExplosives", []];
+_sfLoadoutData set ["heavyExplosives", []];
 
 /////////////////////////////////
 //    Elite Loadout Data       //
 /////////////////////////////////
-// NCR Veteran Rangers and NCR Power Armor troops
-// These the absolute best NCR has to offer — full kit, heavy armor
+// Praetorian Guard and Veteran Legionaries
+// The most feared fighters in the wastes — hand-picked warriors
+// They get the absolute best conventional weapons the Legion has access to
 
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_eliteLoadoutData set ["uniforms", ["ncr_powerarmor_uniform", "ncr_powerarmor_Tricentennial_uniform", "nv_ranger_uniform"]];
-_eliteLoadoutData set ["vests", ["ncr_excalibur_vest_black_02", "V_PlateCarrierSpec_rgr"]];
-_eliteLoadoutData set ["Hvests", ["ncr_excalibur_vest_black_02"]];
-_eliteLoadoutData set ["glVests", ["ncr_excalibur_vest_black_01"]];
-_eliteLoadoutData set ["backpacks", ["AM_BigBagInvis"]];
-_eliteLoadoutData set ["helmets", ["ncr_powerarmor_Patron_helm", "combat_ranger_helmet", "power_armor_helmet_t45d"]];
-_eliteLoadoutData set ["rifles", ["AM_rangerCarbine_Veteran", "AM_ServiceRifleMk2"]];
-_eliteLoadoutData set ["machineGuns", ["AM_M60", "AM_BAR"]];
-_eliteLoadoutData set ["NVGs", ["am_nvg_anpvs7", "am_ulysses_respirator_nv"]];
+_eliteLoadoutData set ["uniforms", ["legionpretorian_uniform", "legionveteran_uniform", "centurion_uniform"]];
+_eliteLoadoutData set ["vests", []];
+_eliteLoadoutData set ["Hvests", []];
+_eliteLoadoutData set ["glVests", []];
+_eliteLoadoutData set ["backpacks", ["AM_AvBagInvis"]];
+// Praetorian helmets and veteran headgear
+_eliteLoadoutData set ["helmets", ["centurion_helmet", "legionfeatherhead01", "legionfeatherhead02", "legate_helm_open"]];
+
+// Elite get the best non-energy weapons: Assault Carbine GRA, Marksman, etc
+_eliteLoadoutData set ["slRifles", ["AM_AssaultCarbine_GRA", "AM_G3AssaultRifle_mod"]];
+_eliteLoadoutData set ["rifles", ["AM_AssaultCarbine_GRA", "AM_G3AssaultRifle", "AM_AssaultCarbine"]];
+_eliteLoadoutData set ["carbines", ["AM_CARifle_Mod", "AM_Tommygun_Mod"]];
+_eliteLoadoutData set ["machineGuns", ["AM_M1919", "AM_BAR_Mod"]];
+_eliteLoadoutData set ["marksmanRifles", ["AM_MarksmanAM", "AM_HuntingRifle_mod_4k"]];
+_eliteLoadoutData set ["sniperRifles", ["AM_AntiMatRifle", "AM_SniperRifleGobi"]];
+// Best Legion sidearms: Lucky .357, Anti-Material for pistol options
+_eliteLoadoutData set ["sidearms", ["AM_357Rev_Lucky", "AM_357Rev_HD", "AM_M1911HD"]];
+// Still NO Fat Man — that's against everything Caesar stands for
+_eliteLoadoutData set ["lightExplosives", []];
+_eliteLoadoutData set ["heavyExplosives", []];
+// Elite get limited NVGs — captured pre-war tech they use but don't rely on
+_eliteLoadoutData set ["NVGs", ["am_nvg_anpvs7"]];
 
 /////////////////////////////////
 //    Military Loadout Data    //
 /////////////////////////////////
-// Standard NCR Army — regular troopers, the backbone of the Republic
+// Prime Legionaries — the backbone of Caesar's army
+// Better armed than recruits, disciplined soldiers
 
 private _militaryLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_militaryLoadoutData set ["uniforms", ["armor_ncr_trooper_01_uniform", "armor_ncr_trooper_grey_uniform", "armor_ncr_trooper_02_uniform"]];
-_militaryLoadoutData set ["vests", ["ncr_excalibur_vest_01", "V_TacVest_khk", "V_TacVest_brn"]];
+_militaryLoadoutData set ["uniforms", ["legionprime_uniform", "legionveteran_uniform"]];
+_militaryLoadoutData set ["vests", []];
 _militaryLoadoutData set ["backpacks", ["AM_AvBagInvis"]];
-_militaryLoadoutData set ["helmets", ["m1_helmet_grn", "m1_helmet_snd", "m1_helmet_sage", "armor_ncr_trooper_helm"]];
+_militaryLoadoutData set ["helmets", ["legionhelmetbase", "legionwhitehelmetbase", "legionwollfhead"]];
 
-// Standard military gets base service rifles — no fancy optics
-_militaryLoadoutData set ["slRifles", ["AM_ServiceRifleMk2", "AM_serviceRifle_N_MRCO"]];
-_militaryLoadoutData set ["rifles", ["AM_serviceRifle", "AM_serviceRifleN", "AM_ServiceRifleMk2"]];
-_militaryLoadoutData set ["carbines", ["AM_AssaultCarbine", "AM_TrailCarbine"]];
+// Prime Legionaries: Cowboy Repeaters, basic carbines, some captured rifles
+_militaryLoadoutData set ["slRifles", ["AM_AssaultCarbine", "AM_CowboyRepeater"]];
+_militaryLoadoutData set ["rifles", ["AM_CowboyRepeater", "AM_HuntingRifle_Mod", "AM_G3AssaultRifle"]];
+_militaryLoadoutData set ["carbines", ["AM_CARifle", "AM_CaravanShotgun", "AM_LeverShotgun"]];
 _militaryLoadoutData set ["machineGuns", ["AM_BAR", "AM_LMG"]];
-_militaryLoadoutData set ["marksmanRifles", ["AM_HuntingRifle_mod_4k", "AM_Marksman"]];
+_militaryLoadoutData set ["marksmanRifles", ["AM_HuntingRifle_mod_4k", "AM_CowboyRepeater4k_Scout"]];
 _militaryLoadoutData set ["sniperRifles", ["AM_SniperRifleGobi", "AM_AntiMatRifle"]];
-// Standard military does NOT get Fat Man — that's Rangers only
+// Standard Legion sidearms
+_militaryLoadoutData set ["sidearms", ["AM_357Rev", "AM_357RevShort"]];
+// No explosives for standard Legion — they melee charge
 _militaryLoadoutData set ["lightExplosives", []];
 _militaryLoadoutData set ["heavyExplosives", []];
 
 ///////////////////////////////
 //    Police Loadout Data    //
 ///////////////////////////////
-// NCR Military Police and Correctional Officers
-// Running the NCRCF and checkpoints — more law enforcement than combat
+// Legion slavers and camp guards — they maintain order through fear
+// They run simpler gear — mostly melee with backup firearms
 
 private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_policeLoadoutData set ["uniforms", ["armornvncrtrooper_mp_uniform", "armornvncrtrooper_plain_uniform", "riot_gear_police_uniform"]];
-_policeLoadoutData set ["vests", ["am_swat_black_mp_vest", "am_swat_brown_mp_vest"]];
-_policeLoadoutData set ["helmets", ["armor_ncr_trooper_helm_mp", "AM_Beret_02_NCR_Bear_Olv", "NCR_MP_Riot_Helmet"]];
-// Police carry SMGs and pistols — not assault rifles
-_policeLoadoutData set ["SMGs", ["AM_9mmSMG", "AM_10mmSMG", "AM_10mmSMGB"]];
-_policeLoadoutData set ["sidearms", ["AM_M1911HD", "AM_357Rev"]];
+// Slavers wear simpler Legion gear
+_policeLoadoutData set ["uniforms", ["legion_recruit_uniform", "legionexplorer_uniform", "legionprime_uniform"]];
+_policeLoadoutData set ["vests", []];
+_policeLoadoutData set ["helmets", ["legionbandana", "legionhelmetbase", "am_cowboyHat_Bent_brown"]];
+// Slavers carry SMGs and basic firearms to control slaves
+_policeLoadoutData set ["SMGs", ["AM_9mmSMG", "AM_Tommygun", "AM_CARifle"]];
+_policeLoadoutData set ["sidearms", ["AM_357Rev", "AM_357RevShort"]];
 
 ////////////////////////////////
 //    Militia Loadout Data    //
 ////////////////////////////////
-// NCR-aligned settlers, auxiliaries, and militia
-// They ain't proper soldiers — they carrying whatever they could find
-// but they ride with the NCR
+// Legion Recruits and Explorer scouts
+// The lowest rung — barely armed, mostly melee, proving themselves to the Legion
+// They the ones attacking Nipton and running ahead of the main force
 
 private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_militiaLoadoutData set ["uniforms", ["wastelandclothing01_uniform", "wastelandclothing03_uniform", "wasteland_doctor_01_uniform", "armor_ncr_trooper_01_uniform"]];
+// Recruits wear rags and stolen armor — they ain't been issued proper Legion gear yet
+_militiaLoadoutData set ["uniforms", ["legionexplorer_uniform", "legion_recruit_uniform", "wastelandclothing01_uniform"]];
 _militiaLoadoutData set ["vests", []];
-_militiaLoadoutData set ["backpacks", ["AM_AvBagInvis"]];
-_militiaLoadoutData set ["helmets", ["rangerhat", "am_cowboyHat_Bent_brown", "am_cowboyHat_Bent_beige", "AM_Cap_Khaki", "AM_Cap_Green"]];
+_militiaLoadoutData set ["backpacks", ["AM_SmallBagInvis"]];
+// Recruits might just have a bandana or nothing
+_militiaLoadoutData set ["helmets", ["legionbandana", "am_cowboyHat_Bent_brown", "am_cowboyHat_Bent_beige", "jessupbandana"]];
 
-// Militia got older or worn-down weapons — Cowboy Repeater, hunting rifles, etc
-_militiaLoadoutData set ["slRifles", ["AM_ServiceRifleMk2", "AM_CowboyRepeater"]];
-_militiaLoadoutData set ["rifles", ["AM_serviceRifle", "AM_CowboyRepeater", "AM_M1"]];
-_militiaLoadoutData set ["carbines", ["AM_TrailCarbine", "AM_CARifle"]];
-_militiaLoadoutData set ["machineGuns", ["AM_BAR", "AM_LMG"]];
-_militiaLoadoutData set ["marksmanRifles", ["AM_HuntingRifle_mod_4k", "AM_HuntingRifle"]];
-_militiaLoadoutData set ["sidearms", ["AM_M1911", "AM_357Rev", "AM_357RevShort"]];
+// Militia/Recruits: Very basic — Cowboy Repeater, pipe guns, sawed-off shotguns
+// They running with whatever they could scavenge before Legion took them in
+_militiaLoadoutData set ["slRifles", ["AM_CowboyRepeater", "AM_M1"]];
+_militiaLoadoutData set ["rifles", ["AM_CowboyRepeater", "AM_CowboyRepeaterB", "AM_M1"]];
+// Carbines: Caravan shotgun and pipe gun — low tier
+_militiaLoadoutData set ["carbines", ["AM_CaravanShotgun", "AM_Sawedoff", "AM_CARifle"]];
+_militiaLoadoutData set ["machineGuns", ["AM_BAR"]];
+_militiaLoadoutData set ["marksmanRifles", ["AM_HuntingRifle", "AM_HuntingRifle_Mod"]];
+// Recruits might carry a hunting rifle if they got one
+_militiaLoadoutData set ["sidearms", ["AM_357RevShort", "AM_357Rev", "AM_10mmPistol"]];
 
 //////////////////////////
 //    Misc Loadouts     //
 //////////////////////////
 
+// Crew: Legion doesn't really run vehicle crews — but if they do, basic gear
 private _crewLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
-_crewLoadoutData set ["uniforms", ["armor_ncr_trooper_01_uniform", "armor_ncr_trooper_grey_uniform"]];
-_crewLoadoutData set ["vests", ["ncr_excalibur_vest_01", "V_TacVest_khk"]];
-_crewLoadoutData set ["helmets", ["NCR_Tanker_Helmet_AFO", "m1_helmet_grn"]];
+_crewLoadoutData set ["uniforms", ["legionprime_uniform", "legion_recruit_uniform"]];
+_crewLoadoutData set ["vests", []];
+_crewLoadoutData set ["helmets", ["legionhelmetbase", "legionwhitehelmetbase"]];
 
+// Pilots: Legion has no pilots — using military loadout as fallback
 private _pilotLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
-_pilotLoadoutData set ["uniforms", ["Armor_ncr_Trooper_Aviation_Grey_uniform", "Armor_ncr_Trooper_Aviation_Green_uniform"]];
-_pilotLoadoutData set ["vests", ["ncr_excalibur_vest_01"]];
-_pilotLoadoutData set ["helmets", ["helmet_heli_closed", "AM_Beret_02_NCRAF"]];
+_pilotLoadoutData set ["uniforms", ["legionprime_uniform"]];
+_pilotLoadoutData set ["vests", []];
+_pilotLoadoutData set ["helmets", ["legionhelmetbase"]];
 
 /////////////////////////////////
 //    Unit Type Definitions    //
 /////////////////////////////////
+// NOTE ON LEGION RIFLEMAN TEMPLATE:
+// In Legion, the "rifleman" role is actually a mixed arms soldier.
+// Lower ranks are melee-heavy — but in Antistasi the AI needs firearms to function.
+// We represent this by giving recruits/militia the worst firearms
+// while veterans and elite get quality weapons. The melee weapons in the weapon list
+// exist in the mod but Antistasi's loadout system primarily expects firearms
+// for combat roles. Melee weapons should be added as secondary items where possible.
 
 private _squadLeaderTemplate = {
     [selectRandomWeighted ["helmets", 2, "slHat", 1]] call _fnc_setHelmet;
@@ -566,8 +619,8 @@ private _explosivesExpertTemplate = {
     ["items_explosivesExpert_extras"] call _fnc_addItemSet;
     ["items_miscEssentials"] call _fnc_addItemSet;
 
+    // Legion explosives experts use mines and basic explosives only
     ["lightExplosives", 2] call _fnc_addItem;
-    if (random 1 > 0.5) then {["heavyExplosives", 1] call _fnc_addItem;};
     if (random 1 > 0.5) then {["atMines", 1] call _fnc_addItem;};
     if (random 1 > 0.5) then {["apMines", 1] call _fnc_addItem;};
 
@@ -649,7 +702,7 @@ private _atTemplate = {
     [selectRandom ["rifles", "carbines"]] call _fnc_setPrimary;
     ["primary", 5] call _fnc_addMagazines;
 
-    [selectRandom ["ATLaunchers", "missileATLaunchers"]] call _fnc_setLauncher;
+    ["ATLaunchers"] call _fnc_setLauncher;
     ["launcher", 3] call _fnc_addMagazines;
 
     ["items_medical_standard"] call _fnc_addItemSet;
@@ -932,7 +985,7 @@ private _unitTypes = [
 [_prefix, _unitTypes, _policeLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
 
 ////////////////////////
-//    Militia Units    //
+//    Militia Units   //
 ////////////////////////
 private _prefix = "militia";
 private _unitTypes = [

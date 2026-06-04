@@ -20,7 +20,7 @@ class Templates
         side = "Inv"; // they occupyin fr
         flagTexture = QPATHTOFOLDER(Templates\Fallout\flag_bos_co.paa); // slap the flag on it
         name = "Brotherhood of Steel"; // what show up in the menu
-        file = "bos_faction"; // the .sqf finna get added automatic
+        file = "BOS"; // the .sqf finna get added automatic
         maps[] = {}; // ain't prioritized on no specific map
         climate[] = {}; // where they comfortable at
         description = "Brothahood of STEAL type shit.";
@@ -32,7 +32,7 @@ class Templates
         side = "Occ";
         flagTexture = QPATHTOFOLDER(Templates\Fallout\flag_ncr_co.paa);
         name = "New California Republic";
-        file = "ncr_faction";
+        file = "NCR";
         maps[] = {};
         climate[] = {};
         description = "NCR tryna spread democracy out to the wasteland. noble or nah, u decide.";
@@ -44,7 +44,7 @@ class Templates
         side = "Inv";
         flagTexture = QPATHTOFOLDER(Templates\Fallout\flag_legion_co.paa);
         name = "Caesar's Legion";
-        file = "legion_faction";
+        file = "LEG";
         maps[] = {};
         climate[] = {}; // they a desert type fr fr
         description = "Caesar out here on some ancient Rome type behavior.";
