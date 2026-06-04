@@ -17,13 +17,13 @@ class Templates
     class Fallout_BoS : Vanilla_Base
     {
         basepath = QPATHTOFOLDER(Templates\Fallout); // where we keepin our stuff at
-        side = "Occ"; // they occupyin fr
+        side = "Inv"; // they occupyin fr
         flagTexture = QPATHTOFOLDER(Templates\Fallout\flag_bos_co.paa); // slap the flag on it
         name = "Brotherhood of Steel"; // what show up in the menu
-        file = "fallout_bos"; // the .sqf finna get added automatic
+        file = "bos_faction"; // the .sqf finna get added automatic
         maps[] = {}; // ain't prioritized on no specific map
-        climate[] = {"arid", "temperate"}; // where they comfortable at
-        description = "Brotherhood out here hoardin all the tech. classic.";
+        climate[] = {}; // where they comfortable at
+        description = "Brothahood of STEAL type shit.";
     };
 
     class Fallout_NCR : Vanilla_Base
@@ -32,9 +32,9 @@ class Templates
         side = "Occ";
         flagTexture = QPATHTOFOLDER(Templates\Fallout\flag_ncr_co.paa);
         name = "New California Republic";
-        file = "fallout_ncr";
+        file = "ncr_faction";
         maps[] = {};
-        climate[] = {"arid", "temperate"};
+        climate[] = {};
         description = "NCR tryna spread democracy out to the wasteland. noble or nah, u decide.";
     };
 
@@ -44,12 +44,12 @@ class Templates
         side = "Inv";
         flagTexture = QPATHTOFOLDER(Templates\Fallout\flag_legion_co.paa);
         name = "Caesar's Legion";
-        file = "fallout_legion";
+        file = "legion_faction";
         maps[] = {};
-        climate[] = {"arid"}; // they a desert type fr fr
-        description = "Caesar out here on some ancient Rome type behavior. menace.";
+        climate[] = {}; // they a desert type fr fr
+        description = "Caesar out here on some ancient Rome type behavior.";
     };
-
+/*
     class Fallout_Raiders : Vanilla_Base
     {
         basepath = QPATHTOFOLDER(Templates\Fallout);
@@ -61,7 +61,7 @@ class Templates
         climate[] = {"arid", "temperate", "tropical"}; // they everywhere, no cap
         description = "Raiders wildin out across the whole wasteland. watch out.";
     };
-
+*/
 
 };
 /*
