@@ -1,17 +1,11 @@
 class Templates 
 {
     /*
-        aight so a "Class" just be holdin stuff. by itself it don't DO nothing.
-        antistasi scripts gon come thru and grab all the classes from the configs.
-        like say we got a function that grab all factions and show they name —
-        these classes just sittin there as storage, key-value pairs n all that.
+ 
     */
     class Vanilla_Base;
     /*
-        Vanilla_Base is a class up in the main Antistasi Ultimate mod. it got
-        values for factions and whatnot already.
-        class inheritance is lowkey real useful — you ain't gotta redefine
-        every single value in every class. peep the wiki if u ain't up on it.
+
     */
 
     class Fallout_BoS : Vanilla_Base
