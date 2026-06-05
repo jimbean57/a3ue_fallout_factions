@@ -1,0 +1,353 @@
+/*
+    Fallout New Vegas — Civilian Faction (Raiders)
+    Antistasi Faction Template
+    
+    Civilian faction = Raiders + Wastelanders
+    No base Arma 3 uniforms — full Fallout mod replacement for every class.
+    Raider armor goes to _civUniforms.
+    Pre-war/settler/merchant clothing goes to _pressUniforms and _civUniforms.
+    Industrial worker overalls go to _workerUniforms.
+*/
+
+
+//////////////////////////
+//       Vehicles       //
+//////////////////////////
+/*
+["A3A_zeus_Rebels_Vehicle_Basic","A3A_zeus_Rebels_Vehicle_LightUnarmed","A3A_zeus_Rebels_Vehicle_LightArmed","A3A_zeus_Rebels_Vehicle_Truck","A3A_zeus_Rebels_Vehicle_AA","A3A_zeus_Rebels_Vehicle_AT","A3A_zeus_Rebels_Vehicle_CivCar","A3A_zeus_Rebels_Vehicle_CivTruck","A3A_zeus_Rebels_Vehicle_Boat","A3A_zeus_Rebels_Vehicle_CivBoat","A3A_zeus_Occupants_Vehicle_Basic","A3A_zeus_Occupants_Vehicle_LightUnarmed","A3A_zeus_Occupants_Vehicle_MilitiaCar","A3A_zeus_Occupants_Vehicle_Police","A3A_zeus_Occupants_Vehicle_LightArmed","A3A_zeus_Occupants_Vehicle_MilitiaLightArmed","A3A_zeus_Occupants_Vehicle_Truck","A3A_zeus_Occupants_Vehicle_CargoTruck","A3A_zeus_Occupants_Vehicle_AmmoTruck","A3A_zeus_Occupants_Vehicle_RepairTruck","A3A_zeus_Occupants_Vehicle_FuelTruck","A3A_zeus_Occupants_Vehicle_MilitiaTruck","A3A_zeus_Occupants_Vehicle_Medical","A3A_zeus_Occupants_Vehicle_AA","A3A_zeus_Occupants_Vehicle_APC","A3A_zeus_Occupants_Vehicle_LightAPC","A3A_zeus_Occupants_Vehicle_MilitiaAPC","A3A_zeus_Occupants_Vehicle_IFV","A3A_zeus_Occupants_Vehicle_Tank","A3A_zeus_Occupants_Vehicle_LightTank","A3A_zeus_Occupants_Vehicle_TransportBoat","A3A_zeus_Occupants_Vehicle_GunBoat","A3A_zeus_Invaders_Vehicle_Basic","A3A_zeus_Invaders_Vehicle_LightUnarmed","A3A_zeus_Invaders_Vehicle_MilitiaCar","A3A_zeus_Invaders_Vehicle_Police","A3A_zeus_Invaders_Vehicle_LightArmed","A3A_zeus_Invaders_Vehicle_MilitiaLightArmed","A3A_zeus_Invaders_Vehicle_Truck","A3A_zeus_Invaders_Vehicle_CargoTruck","A3A_zeus_Invaders_Vehicle_AmmoTruck","A3A_zeus_Invaders_Vehicle_RepairTruck","A3A_zeus_Invaders_Vehicle_FuelTruck","A3A_zeus_Invaders_Vehicle_MilitiaTruck","A3A_zeus_Invaders_Vehicle_Medical","A3A_zeus_Invaders_Vehicle_AA","A3A_zeus_Invaders_Vehicle_APC","A3A_zeus_Invaders_Vehicle_LightAPC","A3A_zeus_Invaders_Vehicle_MilitiaAPC","A3A_zeus_Invaders_Vehicle_IFV","A3A_zeus_Invaders_Vehicle_Tank","A3A_zeus_Invaders_Vehicle_LightTank","A3A_zeus_Invaders_Vehicle_TransportBoat","A3A_zeus_Invaders_Vehicle_GunBoat","A3A_zeus_Rivals_Vehicle_LightUnarmed","A3A_zeus_Rivals_Vehicle_LightArmed","A3A_zeus_Rivals_Vehicle_Truck","A3A_zeus_Rivals_Vehicle_APC","A3A_zeus_Rivals_Vehicle_Tank","A3A_zeus_Civilians_Vehicle_Car","A3A_zeus_Civilians_Vehicle_Industrial","A3A_zeus_Civilians_Vehicle_Repair","A3A_zeus_Civilians_Vehicle_Medical","A3A_zeus_Civilians_Vehicle_Boat"]
+*/
+// No FNV mod vehicles confirmed in equipment list — leaving blank for manual fill
+["vehiclesCivCar",         ["AM_bus01", "AM_Buggy","AM_FusionFlea_new", "SterbenTOP_Impala1967"]] call _fnc_saveToTemplate;
+["vehiclesCivIndustrial",  ["AM_HMMWV_01"]] call _fnc_saveToTemplate;
+["vehiclesCivHeli",        ["F_VB_01"]] call _fnc_saveToTemplate;
+["vehiclesCivPlanes",      ["C_Plane_Civil_01_F"]] call _fnc_saveToTemplate;
+["vehiclesCivBoat",        ["C_Boat_Civil_01_F"]] call _fnc_saveToTemplate;
+["vehiclesCivRepair",      []] call _fnc_saveToTemplate;
+["vehiclesCivMedical",     []] call _fnc_saveToTemplate;
+["vehiclesCivFuel",        ["SterbenTOP_Tank_truck"]] call _fnc_saveToTemplate;
+
+["variants",   []] call _fnc_saveToTemplate;
+["animations", []] call _fnc_saveToTemplate;
+
+/////////////////////////////////
+///  Identities and currency  ///
+/////////////////////////////////
+
+["currencySymbol", "Caps"] call _fnc_saveToTemplate;
+["faces", [
+    "WhiteHead_01",
+    "WhiteHead_02",
+    "WhiteHead_03",
+    "WhiteHead_04",
+    "WhiteHead_05",
+    "GreekHead_A3_02",
+    "GreekHead_A3_03",
+    "GreekHead_A3_04",
+    "GreekHead_A3_06",
+    "AsianHead_A3_01",
+    "AsianHead_A3_02",
+    "AfricanHead_A3_01",
+    "AfricanHead_A3_02",
+    "AfricanHead_A3_03"
+]] call _fnc_saveToTemplate;
+
+//////////////////////////
+//       Loadouts       //
+//////////////////////////
+
+/*
+    _civUniforms — Raiders + General Wastelanders
+    Raider armor variants, wasteland settler/scavenger clothes,
+    and fiend/powder gang looks. This is the bulk of your
+    "regular civilian" pool in a raider-run town.
+*/
+private _civUniforms = [
+    // --- Raider Armors ---
+    "raiderarmor02_uniform",
+    "raiderarmor02_Black_uniform",
+    "raiderarmor03_uniform",
+    "raiderarmor03_Black_uniform",
+    "raiderarmor04_uniform",
+    "raiderarmor04_Black_uniform",
+    "Raider_power_armor_uniform",       // rare heavy raider
+
+    // --- Fiend Helmets (headgear slot, assign via headgear array) ---
+    // Listed here for reference — move to headgear: fiendhelmet, fiendhelmet02, fiendhelmet03
+
+    // --- Powder Gangers ---
+    "powdergang_02_uniform",
+    "powdergang_03_uniform",
+
+    // --- General Wasteland Clothing ---
+    "wastelandclothing01_uniform",
+    "wastelandclothing03_uniform",
+    "wasteland_clothing_05_uniform",
+    "wastelandsettler02_uniform",
+    "wastelandsettler03_uniform",
+    "wasteland_doctor_01_uniform",      // wasteland docs blend in with civ pop
+    "wasteland_doctor_02_uniform",
+
+    // --- Scavengers (base A3 kept ONLY because no mod scav replacement found) ---
+    // These are the SOLE base A3 entries retained — no FNV-specific scavenger outfit exists
+    "U_C_Scavenger_1",
+    "U_C_Scavenger_2",
+
+    // --- Ghoul Civilians (mutated wastelanders) ---
+    "AM_Ghoul_01_uniform",
+    "AM_ghoul_reaver_01_uniform"
+];
+
+/*
+    _pressUniforms — Journalists / Strip Diplomats / NCR Civilians
+    In FNV, "press" maps to Strip journalists, caravan merchants,
+    and NCR civilian reps. Pre-war suits and lawman attire fit here.
+*/
+private _pressUniforms = [
+    // --- Pre-War / Formal Suits (Sunset Sarsaparilla, Strip, Casinos) ---
+    "AM_Uniform_FormalSuit_sunsetStrip_uniform",
+    "AM_Uniform_FormalSuit_Black_uniform",
+    "AM_Uniform_FormalSuit_Blue_uniform",
+    "AM_Uniform_FormalSuit_Brown_uniform",
+    "AM_Uniform_FormalSuit_DarkBrown_uniform",
+    "AM_Uniform_FormalSuit_Green_uniform",
+    "AM_Uniform_FormalSuit_Purple_uniform",
+    "AM_Uniform_FormalSuit_Red_uniform",
+    "AM_Uniform_FormalSuit_White_uniform",
+    "AM_Uniform_FormalSuit_goldenBoy_uniform",
+    "AM_Uniform_FormalSuit_outsider_uniform",
+    "AM_Uniform_FormalSuit_sharpshooter_uniform",
+
+    // --- Fem Business Suits (NCR Civilian Press / Strip) ---
+    "fem_business_suit_ncr_press_uniform",
+    "fem_business_suit_ncr_uniform",
+    "fem_business_suit_s_ncr_press_uniform",
+    "fem_business_suit_s_ncr_uniform",
+    "fem_business_suit_black_uniform",
+    "fem_business_suit_blue_uniform",
+    "fem_business_suit_brown_uniform",
+    "fem_business_suit_cream_uniform",
+    "fem_business_suit_white_uniform",
+    "fem_relaxed_suit_ncr_press_uniform",
+    "fem_relaxed_suit_ncr_uniform",
+    "fem_relaxed_suit_s_ncr_press_uniform",
+    "fem_relaxed_suit_s_ncr_uniform",
+    "fem_trailblazer_suit_NCR_uniform",
+    "fem_trailblazer_suit_ncr_press_uniform",
+
+    // --- NCR Civilian Outfits ---
+    "ncr_civ_01_01_uniform",
+    "ncr_civ_01_02_uniform",
+    "ncr_civ_01_03_uniform",
+    "ncr_civ_02_01_uniform",
+    "ncr_civ_02_02_uniform",
+    "ncr_civ_02_03_uniform",
+
+    // --- Lawman / Regulator Attire (Strip Marshals, bounty hunters) ---
+    "Lawman_Attire_Jacket_uniform",
+    "Lawman_Attire_Jacket_LV_uniform",
+    "Lawman_Attire_Jacket_Nuka_uniform",
+    "Lawman_Attire_Jacket_Regulator_uniform",
+    "Lawman_Attire_Jacket_Slogan_uniform",
+    "Lawman_Attire_dusters_uniform",
+    "Lawman_Attire_dusters_LV_uniform",
+    "Lawman_Attire_dusters_Nuka_uniform",
+    "Lawman_Attire_dusters_Regulator_uniform",
+    "Weathered_Duster",
+
+    // --- Wasteland Merchants (caravan press equivalent) ---
+    "wastelandmerchant01_uniform"
+];
+
+/*
+    _workerUniforms — Factory / Resource Workers
+    Vault jumpsuits, utility suits, and radiation gear
+    fit the "industrial labor" role in the wasteland.
+*/
+private _workerUniforms = [
+    // --- Vault Utility Jumpsuits (workers, laborers, trapped vault dwellers) ---
+    "vaultsuitutility_uniform",
+    "vaultsuitutilityempty_uniform",
+    "vaultsuitutility13_uniform",
+    "vaultsuitutility19_uniform",
+    "vaultsuitutility21_uniform",
+    "vaultsuitutility22_uniform",
+    "vaultsuitutility34_uniform",
+    "vaultsuitutility69_uniform",
+    "vaultsuitutility87_uniform",
+    "vaultsuitutility101c_uniform",
+    "vaultsuitutility101c2_uniform",
+
+    // --- Vault Scientist Suits (research/factory lab workers) ---
+    "vault_scientist_uniform",
+    "vault_scientist_1_uniform",
+
+    // --- Radiation Suits (hazmat / industrial environment workers) ---
+    "radiationsuit_ncr_uniform",
+
+    // --- Wasteland Doctor (field medic / resource worker equivalent) ---
+    "NCR_doctor_uniform",
+    "NCR_doctor_blood_uniform"
+];
+
+/*
+    =============================================
+    HEADGEAR ARRAYS — add to your faction template
+    as civHeadgear / pressHeadgear / workerHeadgear
+    =============================================
+*/
+
+/*  Civ Headgear — Raider / Wasteland */
+private _civHeadgear = [
+    // --- Raider Helmets ---
+    "helmetraider02",
+    "helmetraider03",
+    "am_helmetraider03",
+    "am_helmetraider03f",
+    "am_raiderarmorhelmet",
+    "raiderarmor04_hat",
+    "Raider_power_helm",
+
+    // --- Fiend Helmets ---
+    "fiendhelmet",
+    "fiendhelmet02",
+    "fiendhelmet03",
+
+    // --- Wasteland Hats / Headwear ---
+    "hat_wasteland_clothing_02",
+    "hatwastelandmerchant",
+    "hatwastelandmerchant_red",
+    "hatwastelandmerchant_Buck_Sage",
+    "hatwastelandmerchant_Buck_White",
+    "hatwastelandmerchant_Patreon",
+    "hatwastelandmerchant_Patreon_Black",
+
+    // --- Raider Hairstyles (used as headgear items in FNV mods) ---
+    "am_hairraiderspikes_blk",
+    "am_hairraiderspikes_blnd",
+    "am_hairraiderspikes_brn",
+    "am_hairraiderspikes_red",
+    "am_hairraiderspikes_grn",
+    "am_hairraiderspikes_gry",
+    "am_hairraiderside_blk",
+    "am_hairraiderside_blnd",
+    "am_hairraiderside_brn",
+    "am_hairraiderside_grn",
+    "am_hairraiderside_gry",
+    "am_hairraiderside_red",
+    "am_hairraidermid_blk",
+    "am_hairraidermid_blnd",
+    "am_hairraidermid_brn",
+    "am_hairraidermid_gry",
+    "am_f_hairraider02_blk",
+    "am_f_hairraider02_blnd",
+    "am_f_hairraider02_brn",
+    "am_f_hairraider02_grn",
+    "am_f_hairraider02_gry",
+    "am_f_hairraider02_red",
+    "am_f_hairraider04_blk",
+    "am_f_hairraider04_blnd",
+    "am_f_hairraider04_brn",
+    "am_f_hairraider04_grn",
+    "am_f_hairraider04_gry",
+    "am_f_hairraider04_red",
+    "am_f_hairraiderspikes_blk",
+    "am_f_hairraiderspikes_blnd",
+    "am_f_hairraiderspikes_brn",
+    "am_f_hairraiderspikes_grn",
+    "am_f_hairraiderspikes_gry",
+    "am_f_hairraiderspikes_red",
+
+    // --- Tinfoil Hat (paranoid wastelanders — thematic flavor) ---
+    "H_Hat_Tinfoil_F"   // base A3 — no mod replacement; kept for thematic value
+];
+
+/* Press/Merchant Headgear — NCR Civs / Strip */
+private _pressHeadgear = [
+    "am_hat_ncr_civ_h1_blk",
+    "am_hat_ncr_civ_h1_brn",
+    "am_hat_ncr_civ_h1_dbrn",
+    "am_hat_ncr_civ_h2_blk",
+    "am_hat_ncr_civ_h2_brn",
+    "am_hat_ncr_civ_h2_dbrn",
+    "am_hat_ncr_civ_h3_blk",
+    "am_hat_ncr_civ_h3_brn",
+    "am_hat_ncr_civ_h3_dbrn",
+    "am_ncr_civ_glasses_m_nv"
+];
+
+/* Worker Headgear — Vault / Lab */
+private _workerHeadgear = [
+    "vault_security_helmet",
+    "bos_underarmor_helmet"     // repurposed as generic lab safety helm
+];
+
+private _dlcUniforms = [];          //Uniforms given if DLCs are enabled, only given to the Arsenal not Civilians
+
+if (_hasApex) then {_dlcUniforms append [];
+};
+
+if (_hasLawsOfWar) then {_dlcUniforms append [];
+};
+
+["uniforms", _civUniforms + _pressUniforms + _workerUniforms + _dlcUniforms] call _fnc_saveToTemplate;          //Uniforms given to the Arsenal, Allowed for Undercover and given to Rebel Ai that go Undercover
+
+_civhats = [];
+
+["headgear", _civHats] call _fnc_saveToTemplate;            //Headgear given to Normal Civs, Workers, Undercover Rebels.
+
+private _loadoutData = call _fnc_createLoadoutData;
+
+_loadoutData set ["uniforms", _civUniforms];
+_loadoutData set ["helmets", _civHats];
+
+_loadoutData set ["pressUniforms", _pressUniforms];
+_loadoutData set ["pressVests", _pressVests];
+_loadoutData set ["pressHelmets", _pressHelmets];
+
+_loadoutData set ["workerUniforms", _workerUniforms];
+_loadoutData set ["workerHelmets", _workerHelmets];
+
+_loadoutData set ["maps", ["ItemMap"]];
+_loadoutData set ["watches", ["ItemWatch"]];
+_loadoutData set ["compasses", ["ItemCompass"]];
+
+
+private _manTemplate = {
+    ["helmets"] call _fnc_setHelmet;
+    ["uniforms"] call _fnc_setUniform;
+
+    ["items_medical_standard"] call _fnc_addItemSet;
+
+    ["maps"] call _fnc_addMap;
+    ["watches"] call _fnc_addWatch;
+    ["compasses"] call _fnc_addCompass;
+};
+private _workerTemplate = {
+    [["workerHelmets", "helmets"] call _fnc_fallback] call _fnc_setHelmet;
+    ["workerUniforms"] call _fnc_setUniform;
+
+    ["items_medical_standard"] call _fnc_addItemSet;
+
+    ["maps"] call _fnc_addMap;
+    ["watches"] call _fnc_addWatch;
+    ["compasses"] call _fnc_addCompass;
+};
+private _pressTemplate = {
+    [["pressHelmets", "helmets"] call _fnc_fallback] call _fnc_setHelmet;
+    ["pressVests"] call _fnc_setVest;
+    ["pressUniforms"] call _fnc_setUniform;
+
+    ["items_medical_standard"] call _fnc_addItemSet;
+
+    ["maps"] call _fnc_addMap;
+    ["watches"] call _fnc_addWatch;
+    ["compasses"] call _fnc_addCompass;
+};
+private _prefix = "militia";
+private _unitTypes = [
+    ["Press", _pressTemplate],
+    ["Worker", _workerTemplate],
+    ["Man", _manTemplate]
+];
+
+[_prefix, _unitTypes, _loadoutData] call _fnc_generateAndSaveUnitsToTemplate;

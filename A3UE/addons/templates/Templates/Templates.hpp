@@ -35,21 +35,34 @@ class Templates
         file = "NCR";
         maps[] = {};
         climate[] = {};
-        description = "NCR tryna spread democracy out to the wasteland. noble or nah, u decide.";
+        description = "Even after a nuclear war California is still a statist shithole.";
     };
 
     class Fallout_Legion : Vanilla_Base
     {
         basepath = QPATHTOFOLDER(Templates\Fallout);
-        side = "Inv";
+        side = "Reb";
         flagTexture = QPATHTOFOLDER(Templates\Fallout\flag_legion_co.paa);
         name = "Caesar's Legion";
         file = "LEG";
         maps[] = {};
         climate[] = {}; // they a desert type fr fr
-        description = "Caesar out here on some ancient Rome type behavior.";
+        description = "Erm.... based?";
     };
+    class Fallout_Civilians : Vanilla_Base
+    {
+        basepath = QPATHTOFOLDER(Templates\Fallout);
+        side = "Civ";
+        flagTexture = QPATHTOFOLDER(Templates\Fallout\flag_legion_co.paa);
+        name = "Couriers";
+        file = "NVCIV";
+        maps[] = {};
+        climate[] = {}; // they a desert type fr fr
+        description = "Benny is gonna get it.";
+    };
+
 /*
+TODO
     class Fallout_Raiders : Vanilla_Base
     {
         basepath = QPATHTOFOLDER(Templates\Fallout);

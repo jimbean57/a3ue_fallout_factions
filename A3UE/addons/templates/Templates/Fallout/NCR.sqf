@@ -16,7 +16,7 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 //   Side Information   //
 //////////////////////////
 
-["name", "New California Republic"] call _fnc_saveToTemplate;
+["name", "NCR"] call _fnc_saveToTemplate;
 ["spawnMarkerName", format [localize "STR_supportcorridor", "NCR"]] call _fnc_saveToTemplate;
 
 ["flag", "Flag_White_F"] call _fnc_saveToTemplate;

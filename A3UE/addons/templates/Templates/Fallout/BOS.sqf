@@ -14,7 +14,7 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 //   Side Information   //
 //////////////////////////
 
-["name", "Brotherhood of Steel"] call _fnc_saveToTemplate; 						
+["name", "BOS"] call _fnc_saveToTemplate; 						
 ["spawnMarkerName", format [localize "STR_supportcorridor", "AAF"]] call _fnc_saveToTemplate; 			
 
 ["flag", "Flag_White_F"] call _fnc_saveToTemplate; 						
