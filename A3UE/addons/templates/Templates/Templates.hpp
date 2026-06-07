@@ -8,29 +8,31 @@ class Templates
 
     */
 
-    class Fallout_BoS : Vanilla_Base
-    {
-        basepath = QPATHTOFOLDER(Templates\Fallout); // where we keepin our stuff at
-        side = "Inv"; // they occupyin fr
-        flagTexture = QPATHTOFOLDER(Templates\Fallout\flag_bos_co.paa); // slap the flag on it
-        name = "Brotherhood of Steel"; // what show up in the menu
-        file = "BOS"; // the .sqf finna get added automatic
-        maps[] = {}; // ain't prioritized on no specific map
-        climate[] = {}; // where they comfortable at
-        description = "Brothahood of STEAL type shit.";
-    };
+class Fallout_BoS : Vanilla_Base
+{
+    basepath = QPATHTOFOLDER(Templates\Fallout);
+    side = "Inv";
+    flagTexture = QPATHTOFOLDER(Templates\Fallout\bos_flag.paa);
+    name = "Brotherhood of Steel";
+    file = "BOS";
+    maps[] = {};
+    climate[] = {};
+    description = "Brothahood of STEAL type shit.";
+    markerIcon = "Fallout_BoS_Icon"; // <-- THIS is what setMarkerType receives
+};
 
-    class Fallout_NCR : Vanilla_Base
-    {
-        basepath = QPATHTOFOLDER(Templates\Fallout);
-        side = "Occ";
-        flagTexture = QPATHTOFOLDER(Templates\Fallout\flag_ncr_co.paa);
-        name = "New California Republic";
-        file = "NCR";
-        maps[] = {};
-        climate[] = {};
-        description = "Even after a nuclear war California is still a statist shithole.";
-    };
+class Fallout_NCR : Vanilla_Base
+{
+    basepath = QPATHTOFOLDER(Templates\Fallout);
+    side = "Occ";
+    flagTexture = QPATHTOFOLDER(Templates\Fallout\ncr_flag.paa);
+    name = "New California Republic";
+    file = "NCR";
+    maps[] = {};
+    climate[] = {};
+    description = "Even after a nuclear war California is still a statist shithole.";
+    markerIcon = "Fallout_NCR_Icon"; // <-- THIS is what setMarkerType receives
+};
 
     class Fallout_Legion : Vanilla_Base
     {

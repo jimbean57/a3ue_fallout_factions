@@ -19,7 +19,7 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 
 ["flag", "Flag_White_F"] call _fnc_saveToTemplate; 						
 ["flagTexture", QPATHTOFOLDER(Templates\Fallout\bos_flag.paa)] call _fnc_saveToTemplate;				
-["flagMarkerType", "flag_NATO"] call _fnc_saveToTemplate; 			
+["flagMarkerType", QPATHTOFOLDER(Templates\Fallout\bos_icon.paa)] call _fnc_saveToTemplate; 			
 
 //////////////////////////
 //       Vehicles       //

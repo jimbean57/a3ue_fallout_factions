@@ -1,0 +1,1579 @@
+ 0:04:36 2026-06-07 04:04:36:448 | Antistasi | Info | File: A3A_fnc_initBases | InitBases completed | Called By: A3A_fnc_initZones
+ 0:04:36 2026-06-07 04:04:36:448 | Antistasi | Info | File: A3A_fnc_initZones | Setting up towns | Called By: A3A_fnc_initServer
+ 0:04:36 2026-06-07 04:04:36:581 | Antistasi | Info | File: A3A_fnc_initZones | Setting up zone-dependent objects - antennas and banks | Called By: A3A_fnc_initServer
+ 0:04:36 2026-06-07 04:04:36:877 | Antistasi | Info | File: A3A_fnc_initZones | Setting up fuel stations | Called By: A3A_fnc_initServer
+ 0:04:36 2026-06-07 04:04:36:884 | Antistasi | Info | File: A3A_fnc_initZones | Setting up military administrations | Called By: A3A_fnc_initServer
+ 0:04:36 2026-06-07 04:04:36:885 | Antistasi | Info | File: A3A_fnc_initZones | initZones completed | Called By: A3A_fnc_initServer
+ 0:04:36 2026-06-07 04:04:36:885 | Antistasi | Info | File: A3A_fnc_initServer | Background init started
+ 0:04:36 2026-06-07 04:04:36:885 | Antistasi | Info | File: A3A_fnc_loadNavGrid | Started loading nav grid | Called By: A3A_fnc_initServer
+ 0:04:36 2026-06-07 04:04:36:897 | Antistasi | Info | File: A3A_fnc_loadNavGrid | Finished loading nav grid | Called By: A3A_fnc_initServer
+ 0:04:36 2026-06-07 04:04:36:904 | Antistasi | Info | File: A3A_fnc_initServer | Server JNA preload started
+ 0:04:36 2026-06-07 04:04:36:926 | Antistasi | Info | File: A3A_fnc_setupMonitor | Setup monitor started
+ 0:04:36 2026-06-07 04:04:36:940 | Antistasi | Info | File: fn_advancedTowingInit.sqf | Loading advanced towing
+ 0:04:36 2026-06-07 04:04:36:940 | Antistasi | Info | File: fn_advancedTowingInit.sqf | Loaded advanced towing
+ 0:04:37 2026-06-07 04:04:37:419 | Antistasi | Info | File: A3A_fnc_initServer | Background init completed
+ 0:04:37 2026-06-07 04:04:37:419 | Antistasi | Info | File: A3A_fnc_initServer | Server Initialising PATCOM Variables
+ 0:04:37 2026-06-07 04:04:37:419 | Antistasi | Info | File: A3A_fnc_patrolInit | PATCOM | Init Complete | Called By: A3A_fnc_initServer
+ 0:04:37 "User/BIS_fnc_log: [postInit] HALs_store_fnc_initModule (1451 ms)"
+ 0:04:37 2026-06-07 04:04:37:681 | Antistasi | Info | File: HR_GRG_fnc_loadSaveData | Formatting an existing saved garage to 8 categories | Called By: HR_GRG_fnc_initServer
+ 0:04:37 "User/BIS_fnc_log: [postInit] HR_GRG_fnc_initServer (1.00708 ms)"
+ 0:04:37 "User/BIS_fnc_log: [postInit] A3UE_functions_fnc_addExampleEventListener (0 ms)"
+ 0:04:37 "User/BIS_fnc_log: [postInit] CUP_fnc_emissiveLights (0 ms)"
+ 0:04:37 "User/BIS_fnc_log: [postInit] BIS_fnc_reviveInit (0 ms)"
+ 0:04:37 [CBA] (xeh) INFO: [26835,232.968,0] PostInit started. MISSIONINIT: missionName=Antistasi_takistan, missionVersion=54, worldName=takistan, isMultiplayer=true, isServer=true, isDedicated=false, CBA_isHeadlessClient=false, hasInterface=true, didJIP=false
+ 0:04:37 [CBA] (versioning) INFO: [26835,232.98,0] VERSIONING:cba=3.18.6.260327, zen=1.15.1.36
+ 0:04:37 [CBA] (xeh) INFO: [26835,232.985,0] PostInit finished.
+ 0:04:37 "User/BIS_fnc_log: [postInit] CBA_fnc_postInit (16.9983 ms)"
+ 0:04:37 "User/BIS_fnc_log: [BIS_fnc_preload] ----- Scripts initialized at 4586 ms -----"
+ 0:04:45  Mission id: 90cfa91d299ebf0965ce5d77f8e449a4ce086002
+ 0:04:45 "User/BIS_fnc_log: [BIS_fnc_selectRespawnTemplate] onPlayerRespawn template 'Counter' executed from function 'BIS_fnc_respawnCounter'"
+ 0:04:46 2026-06-07 04:04:46:608 | Antistasi | Info | File: A3A_fnc_setupMonitor | Player User is now admin sending them the save data
+ 0:04:46 Warning Message: Picture \x\a3ue\addons\templates\templates\fallout\flag_legion_co.paa not found
+ 0:04:46 Warning Message: Picture \x\a3ue\addons\templates\templates\fallout\flag_legion_co.paa not found
+ 0:04:46 Error in expression <_texts select _forEachIndex);
+_valsCtrl lbSetValue [_index, _x];
+if (_index isNo>
+ 0:04:46   Error position: <lbSetValue [_index, _x];
+if (_index isNo>
+ 0:04:46   Error Type String, expected Number
+ 0:04:46 File x\A3A\addons\gui\functions\SetupGUI\fn_setupParamsTab.sqf..., line 97
+ 0:06:50 2026-06-07 04:06:50:405 | Antistasi | Info | File: A3A_fnc_startGame | startGame called with data [["DLC",[]],["name",""],["useNewNamespace",true],["startType","new"],["factions",["Fallout_NCR","Fallout_BoS","Vanilla_FIA","Fallout_Civilians","Vanilla_Exegermenos"]],["params",[["gameMode",1],["areRivalsEnabled",1],["rivalsDifficulty",3],["victoryCondition",1],["lossCondition",1],["areRandomEventsEnabled",1],["createAmbientSounds",1],["membershipEnabled",0],["A3A_guestCommander",1],["tkPunish",0],["magRepack",1],["RRTurretMagazines",1],["newCarTowing",1],["disableAutoSmokeCover",1],["autoSave",1],["autoSaveInterval",3600],["A3A_idleTimeout",120],["A3A_isUAVAFK",1],["A3A_isZeusAFK",1],["A3A_GCThreshold",-1],["settingsTimeMultiplier",1],["distanceSPWN",1100],["enemyNearDistance",500],["globalCivilianMax",5],["maxCiviliansPerTown",2],["civTraffic",2],["allowCivDialog",1],["zombiesUncapped",1],["plusGarrison",0],["radiomanSupport",1],["playerRecruitAI",1],["recruitToPlayerSquad",
+ 0:06:50 >>> 1],["aiControlTime",120],["unconsciousPossessAi",1],["loadoutsToGenerate",20],["initialPlayerMoney",2500],["initialFactionMoney",10000],["deathPenalty",100],["initialHr",50],["limitHR",0],["loseHROnDeath",2],["maxSupportPoints",5],["pistolStart",0],["startWithLongRangeRadio",0],["aceFood",0],["enableSpectrumDevice",0],["reviveKitsEnabled",0],["A3A_reviveTime",8],["A3A_selfReviveMethods",1],["useDownedNotification",1],["rallyPointSpawnCount",15],["staminaEnabled",0],["fatigueEnabled",0],["swayEnabled",100],["A3A_removeRestore",1],["limitedFT",2],["fastTravelEnemyCheck",1],["unflipPersonCount",1],["A3A_rebelGarrisonLimit",-1],["A3A_rebelGarrisonGroupSize",12],["A3A_enemyBalanceMul",28],["A3A_enemyAttackMul",28],["A3A_invaderBalanceMul",20],["enablePunishments",1],["A3A_enemyResponseTime",7],["A3A_attackHQProximityMul",5],["A3A_enemySkillMul",1],["A3A_rebelSkillMul",1],["aiAccuracyCeiling",45],["unconChanceEny",5],["unconChanceReb",10],["napalmEnabled",0],["allowUnfairSupports",
+ 0:06:50 >>> 1],["allowFuturisticSupports",1],["allowFuturisticUnfairSupports",1],["A3A_UAVSpawnChance",0],["distanceMission",2000],["A3U_enableVehiclesForAI",0],["playerMarkersEnabled",1],["hideEnemyMarkers",0],["hideEnemyMarkersReconPlaneDistance",500],["playerIcons",1],["loadoutArsenalDefaultOverride",0],["limitWeaponsByUnitType",0],["disableTrader",0],["vanillaArmsDealer",0],["blackMarketIgnoreRequirements",0],["A3U_blackMarketDiscountVehicle",0],["A3U_blackMarketDiscountWeapon",0],["A3A_builderPermissions",3],["A3A_builderLimit",400],["A3A_builderBuildTime",0],["A3A_builderAllowRoads",1],["A3U_HelipadTerrainSmoothing",1],["saveZeusBuildings",1],["maxConstructions",250],["minWeaps",20],["A3A_guestItemLimit",40],["unlockedUnlimitedAmmo",1],["allowGuidedLaunchers",1],["allowUnlockedExplosives",1],["allowUnlockedTNVG",0],["cosmeticsEnabled",1],["lootCratesEnabled",1],["lootCrateDistance",200],["lootCratePrice",500],["lootCrateUnlockedItems",1],["crateWepTypeMax",8],["crateWepNumMax",
+ 0:06:50 >>> 5],["crateItemTypeMax",4],["crateItemNumMax",3],["crateAmmoTypeMax",6],["crateAmmoNumMax",10],["crateExplosiveTypeMax",4],["crateExplosiveNumMax",3],["crateAttachmentTypeMax",6],["crateAttachmentNumMax",5],["crateBackpackTypeMax",0],["crateBackpackNumMax",1],["crateVestTypeMax",0],["crateVestNumMax",1],["crateHelmetTypeMax",0],["crateHelmetNumMax",1],["crateDeviceTypeMax",2],["crateDeviceNumMax",1],["enableVehicleAutoLock",1],["enableVehicleAutoLockCiv",0],["vehicleLockpickTime",30],["helmetLossChance",33],["helmetLossSound",1],["A3A_diameterExtendedCaptureArea",500],["A3U_disablePATCOMMortars",0],["A3U_disableMortars",0],["A3A_ultimate_allowLockpickKits",1],["A3A_ultimate_lockpickKitBreakChance",0],["AIrevivesOutsideSquad",100],["LogLevel",4],["A3A_logDebugConsole",2],["A3A_flagGarageBlock",0],["YourExtenderNameParams",0],["A3UE_YourExtenderName_ParamName",3]]],["startPos",[834.117,10473.5,0]],["addonVics",[]]]
+ 0:06:50 2026-06-07 04:06:50:500 | Antistasi | Info | File=fn_arsenal_init.sqf | JNA init started
+ 0:06:50 2026-06-07 04:06:50:916 | Antistasi | Info | File: A3A_fnc_setupMonitor | Setup monitor terminated
+ 0:06:51 2026-06-07 04:06:51:429 | Antistasi | Info | File: JN_fnc_arsenal_init | JNA server detected | Called By: A3A_fnc_initServer
+ 0:06:51 2026-06-07 04:06:51:429 | Antistasi | Info | File: JN_fnc_arsenal_init | JNA loading player data | Called By: A3A_fnc_initServer
+ 0:06:51 2026-06-07 04:06:51:432 | Antistasi | Info | File: JN_fnc_arsenal_init | JNA init completed | Called By: A3A_fnc_initServer
+ 0:06:51 2026-06-07 04:06:51:432 | Antistasi | Info | File: A3A_fnc_initVarServer | initVarServer started | Called By: A3A_fnc_initServer
+ 0:06:51 2026-06-07 04:06:51:432 | Antistasi | Info | File: A3A_fnc_initVarServer | initialising general server variables | Called By: A3A_fnc_initServer
+ 0:06:51 2026-06-07 04:06:51:433 | Antistasi | Info | File: A3A_fnc_initVarServer | Setting server only variables | Called By: A3A_fnc_initServer
+ 0:06:51 2026-06-07 04:06:51:433 | Antistasi | Info | File: A3A_fnc_initVarServer | Initialising item categories | Called By: A3A_fnc_initServer
+ 0:06:51 2026-06-07 04:06:51:433 | Antistasi | Info | File: A3A_fnc_initVarServer | Setting mod configs | Called By: A3A_fnc_initServer
+ 0:06:51 2026-06-07 04:06:51:433 | Antistasi | Info | File: A3A_fnc_initVarServer | Setting up faction and DLC equipment flags | Called By: A3A_fnc_initServer
+ 0:06:51 2026-06-07 04:06:51:442 | Antistasi | Debug | File: A3A_fnc_initVarServer | DLC loaded: ["aow","enoch","tank","orange","jets","expansion","mark","heli","kart"] Enabled: [] Disabled: ["aow","enoch","tank","orange","jets","expansion","mark","heli","kart"] Vanilla: ["aow","enoch","tank","tacops","orange","argo","jets","expansion","mark","heli","kart","curator","a3","","officialmod"] | Called By: A3A_fnc_initServer
+ 0:06:51 2026-06-07 04:06:51:442 | Antistasi | Debug | File: A3A_fnc_initVarServer | Faction equip flags: ["vanilla"] | Called By: A3A_fnc_initServer
+ 0:06:51 2026-06-07 04:06:51:442 | Antistasi | Debug | File: A3A_fnc_initVarServer | Extra equip mod paths: [] | Called By: A3A_fnc_initServer
+ 0:06:51 2026-06-07 04:06:51:442 | Antistasi | Info | File: A3A_fnc_initVarServer | Reading templates | Called By: A3A_fnc_initServer
+ 0:06:51 2026-06-07 04:06:51:442 | Antistasi | Info | File: A3A_fnc_initVarServer | Loading template Fallout_NCR for side WEST | Called By: A3A_fnc_initServer
+ 0:06:51 2026-06-07 04:06:51:442 | Antistasi | Info | File: A3A_fnc_compatibilityLoadFaction | Compatibility loading template: '\x\A3UE\addons\templates\Templates\Fallout\NCR.sqf' as side WEST | Called By: A3A_fnc_initVarServer
+ 0:06:51 Error compiling '' in 'hitpelvis'
+ 0:06:51 Error compiling '' in 'hitabdomen'
+ 0:06:51 Error compiling '' in 'hitdiaphragm'
+ 0:06:51 Error compiling '' in 'hitchest'
+ 0:06:51 Error compiling '' in 'hitarms'
+ 0:06:51 Error compiling '' in 'hitlegs'
+ 0:06:51 Error compiling '' in 'hitpelvis'
+ 0:06:51 Error compiling '' in 'hitabdomen'
+ 0:06:51 Error compiling '' in 'hitdiaphragm'
+ 0:06:51 Error compiling '' in 'hitchest'
+ 0:06:51 Error compiling '' in 'hitarms'
+ 0:06:51 Error compiling '' in 'hitlegs'
+ 0:06:51 Error compiling '' in 'hitpelvis'
+ 0:06:51 Error compiling '' in 'hitabdomen'
+ 0:06:51 Error compiling '' in 'hitdiaphragm'
+ 0:06:51 Error compiling '' in 'hitchest'
+ 0:06:51 Error compiling '' in 'hitarms'
+ 0:06:51 Error compiling '' in 'hitlegs'
+ 0:06:51 Error compiling '' in 'hitpelvis'
+ 0:06:51 Error compiling '' in 'hitabdomen'
+ 0:06:51 Error compiling '' in 'hitdiaphragm'
+ 0:06:51 Error compiling '' in 'hitchest'
+ 0:06:51 Error compiling '' in 'hitarms'
+ 0:06:51 Error compiling '' in 'hitlegs'
+ 0:06:51 Error compiling '' in 'hitpelvis'
+ 0:06:51 Error compiling '' in 'hitabdomen'
+ 0:06:51 Error compiling '' in 'hitdiaphragm'
+ 0:06:51 Error compiling '' in 'hitchest'
+ 0:06:51 Error compiling '' in 'hitarms'
+ 0:06:51 Error compiling '' in 'hitlegs'
+ 0:06:51 Error compiling '' in 'hitpelvis'
+ 0:06:51 Error compiling '' in 'hitabdomen'
+ 0:06:51 Error compiling '' in 'hitdiaphragm'
+ 0:06:51 Error compiling '' in 'hitchest'
+ 0:06:51 Error compiling '' in 'hitarms'
+ 0:06:51 Error compiling '' in 'hitlegs'
+ 0:06:51 String STR_riot_gear_police_body not found
+ 0:06:51 Error compiling '' in 'hitpelvis'
+ 0:06:51 Error compiling '' in 'hitabdomen'
+ 0:06:51 Error compiling '' in 'hitdiaphragm'
+ 0:06:51 Error compiling '' in 'hitchest'
+ 0:06:51 Error compiling '' in 'hitarms'
+ 0:06:51 Error compiling '' in 'hitlegs'
+ 0:06:52 Error compiling '' in 'hitpelvis'
+ 0:06:52 Error compiling '' in 'hitabdomen'
+ 0:06:52 Error compiling '' in 'hitdiaphragm'
+ 0:06:52 Error compiling '' in 'hitchest'
+ 0:06:52 Error compiling '' in 'hitarms'
+ 0:06:52 Error compiling '' in 'hitlegs'
+ 0:06:52 Error compiling '' in 'hitpelvis'
+ 0:06:52 Error compiling '' in 'hitabdomen'
+ 0:06:52 Error compiling '' in 'hitdiaphragm'
+ 0:06:52 Error compiling '' in 'hitchest'
+ 0:06:52 Error compiling '' in 'hitarms'
+ 0:06:52 Error compiling '' in 'hitlegs'
+ 0:06:52 Error compiling '' in 'hitpelvis'
+ 0:06:52 Error compiling '' in 'hitabdomen'
+ 0:06:52 Error compiling '' in 'hitdiaphragm'
+ 0:06:52 Error compiling '' in 'hitchest'
+ 0:06:52 Error compiling '' in 'hitarms'
+ 0:06:52 Error compiling '' in 'hitlegs'
+ 0:06:52 Error compiling '' in 'hitpelvis'
+ 0:06:52 Error compiling '' in 'hitabdomen'
+ 0:06:52 Error compiling '' in 'hitdiaphragm'
+ 0:06:52 Error compiling '' in 'hitchest'
+ 0:06:52 Error compiling '' in 'hitarms'
+ 0:06:52 Error compiling '' in 'hitlegs'
+ 0:06:52 Error compiling '' in 'hitpelvis'
+ 0:06:52 Error compiling '' in 'hitabdomen'
+ 0:06:52 Error compiling '' in 'hitdiaphragm'
+ 0:06:52 Error compiling '' in 'hitchest'
+ 0:06:52 Error compiling '' in 'hitarms'
+ 0:06:52 Error compiling '' in 'hitlegs'
+ 0:06:52 String STR_armor_ncr_trooper_clothes_green_medic_body not found
+ 0:06:52 Error compiling '' in 'hitpelvis'
+ 0:06:52 Error compiling '' in 'hitabdomen'
+ 0:06:52 Error compiling '' in 'hitdiaphragm'
+ 0:06:52 Error compiling '' in 'hitchest'
+ 0:06:52 Error compiling '' in 'hitarms'
+ 0:06:52 Error compiling '' in 'hitlegs'
+ 0:06:52 2026-06-07 04:06:52:206 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_SF_Rifleman with class ["SF"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:206 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_military_Marksman with class ["military"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:206 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_other_Pilot with class ["other"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:206 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_SF_Radioman with class ["SF"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:206 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_military_SquadLeader with class ["military"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:206 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_militia_Rifleman with class ["militia"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:207 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_elite_SquadLeader with class ["elite"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:207 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_elite_MachineGunner with class ["elite"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:207 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_other_Traitor with class ["other"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:207 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_SF_Medic with class ["SF"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:207 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_military_Engineer with class ["military"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:207 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_elite_Sniper with class ["elite"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:207 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_other_Unarmed with class ["other"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:207 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_SF_AT with class ["SF"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:207 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_elite_Rifleman with class ["elite"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:207 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_elite_AT with class ["elite"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:207 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_SF_LAT with class ["SF"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:207 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_military_Sniper with class ["military"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:207 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_militia_ExplosivesExpert with class ["militia"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:207 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_militia_LAT with class ["militia"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:208 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_militia_MachineGunner with class ["militia"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:208 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_elite_Radioman with class ["elite"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:208 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_SF_Grenadier with class ["SF"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:208 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_military_AT with class ["military"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:208 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_police_Standard with class ["police"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:208 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_militia_SquadLeader with class ["militia"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:214 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_elite_Medic with class ["elite"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:215 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_elite_AA with class ["elite"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:215 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_police_SquadLeader with class ["police"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:215 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_SF_SquadLeader with class ["SF"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:215 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_SF_AA with class ["SF"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:215 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_military_AA with class ["military"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:215 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_militia_Radioman with class ["militia"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:215 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_militia_AA with class ["militia"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:215 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_militia_Marksman with class ["militia"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:215 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_elite_LAT with class ["elite"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:215 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_military_MachineGunner with class ["military"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:215 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_militia_Engineer with class ["militia"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:215 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_elite_Marksman with class ["elite"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:215 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_other_Official with class ["other"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:216 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_military_Medic with class ["military"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:216 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_military_Grenadier with class ["military"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:216 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_SF_Sniper with class ["SF"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:216 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_military_Rifleman with class ["military"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:216 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_militia_AT with class ["militia"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:216 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_militia_Sniper with class ["militia"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:216 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_elite_Engineer with class ["elite"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:216 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_elite_ExplosivesExpert with class ["elite"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:216 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_military_ExplosivesExpert with class ["military"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:216 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_military_LAT with class ["military"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:216 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_militia_Medic with class ["militia"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:216 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_militia_Grenadier with class ["militia"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:216 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_elite_Grenadier with class ["elite"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:216 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_other_Crew with class ["other"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:217 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_SF_Engineer with class ["SF"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:217 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_SF_ExplosivesExpert with class ["SF"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:217 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_SF_MachineGunner with class ["SF"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:217 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_SF_Marksman with class ["SF"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:217 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_occ_military_Radioman with class ["military"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:217 | Antistasi | Info | File: A3A_fnc_initVarServer | Loading template Fallout_BoS for side EAST | Called By: A3A_fnc_initServer
+ 0:06:52 2026-06-07 04:06:52:217 | Antistasi | Info | File: A3A_fnc_compatibilityLoadFaction | Compatibility loading template: '\x\A3UE\addons\templates\Templates\Fallout\BOS.sqf' as side EAST | Called By: A3A_fnc_initVarServer
+ 0:06:52 Error compiling '' in 'hitpelvis'
+ 0:06:52 Error compiling '' in 'hitabdomen'
+ 0:06:52 Error compiling '' in 'hitdiaphragm'
+ 0:06:52 Error compiling '' in 'hitchest'
+ 0:06:52 Error compiling '' in 'hitarms'
+ 0:06:52 Error compiling '' in 'hitlegs'
+ 0:06:52 2026-06-07 04:06:52:913 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_SF_Rifleman with class ["SF"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:914 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_military_Marksman with class ["military"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:914 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_other_Pilot with class ["other"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:914 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_SF_Radioman with class ["SF"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:914 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_military_SquadLeader with class ["military"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:914 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_militia_Rifleman with class ["militia"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:914 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_elite_SquadLeader with class ["elite"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:914 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_elite_MachineGunner with class ["elite"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:914 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_other_Traitor with class ["other"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:918 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_SF_Medic with class ["SF"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:918 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_military_Engineer with class ["military"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:918 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_elite_Sniper with class ["elite"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:918 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_other_Unarmed with class ["other"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:918 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_SF_AT with class ["SF"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:918 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_elite_Rifleman with class ["elite"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:919 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_elite_AT with class ["elite"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:919 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_SF_LAT with class ["SF"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:919 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_military_Sniper with class ["military"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:919 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_militia_ExplosivesExpert with class ["militia"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:919 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_militia_LAT with class ["militia"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:919 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_militia_MachineGunner with class ["militia"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:919 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_elite_Radioman with class ["elite"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:919 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_SF_Grenadier with class ["SF"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:919 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_military_AT with class ["military"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:919 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_police_Standard with class ["police"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:919 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_militia_SquadLeader with class ["militia"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:919 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_elite_Medic with class ["elite"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:919 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_elite_AA with class ["elite"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:920 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_police_SquadLeader with class ["police"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:920 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_SF_SquadLeader with class ["SF"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:920 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_SF_AA with class ["SF"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:920 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_military_AA with class ["military"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:920 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_militia_Radioman with class ["militia"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:920 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_militia_AA with class ["militia"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:920 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_militia_Marksman with class ["militia"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:920 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_elite_LAT with class ["elite"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:920 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_military_MachineGunner with class ["military"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:920 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_militia_Engineer with class ["militia"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:920 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_elite_Marksman with class ["elite"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:920 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_other_Official with class ["other"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:920 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_military_Medic with class ["military"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:920 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_military_Grenadier with class ["military"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:921 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_SF_Sniper with class ["SF"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:921 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_military_Rifleman with class ["military"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:921 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_militia_AT with class ["militia"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:921 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_militia_Sniper with class ["militia"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:921 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_elite_Engineer with class ["elite"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:921 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_elite_ExplosivesExpert with class ["elite"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:921 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_military_ExplosivesExpert with class ["military"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:924 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_military_LAT with class ["military"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:924 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_militia_Medic with class ["militia"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:924 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_militia_Grenadier with class ["militia"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:924 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_elite_Grenadier with class ["elite"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:924 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_other_Crew with class ["other"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:924 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_SF_Engineer with class ["SF"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:924 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_SF_ExplosivesExpert with class ["SF"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:924 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_SF_MachineGunner with class ["SF"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:924 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_SF_Marksman with class ["SF"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:924 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_inv_military_Radioman with class ["military"] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:52 2026-06-07 04:06:52:925 | Antistasi | Info | File: A3A_fnc_initVarServer | Loading template Vanilla_FIA for side GUER | Called By: A3A_fnc_initServer
+ 0:06:52 2026-06-07 04:06:52:926 | Antistasi | Info | File: A3A_fnc_compatibilityLoadFaction | Compatibility loading template: '\x\A3A\addons\core\Templates\Templates\Vanilla\Vanilla_Reb_FIA.sqf' as side GUER | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:017 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_reb_militia_Rifleman with class [] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:53 2026-06-07 04:06:53:017 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_reb_militia_ExplosivesExpert with class [] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:53 2026-06-07 04:06:53:017 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_reb_militia_LAT with class [] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:53 2026-06-07 04:06:53:017 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_reb_militia_MachineGunner with class [] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:53 2026-06-07 04:06:53:017 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_reb_militia_SquadLeader with class [] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:53 2026-06-07 04:06:53:017 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_reb_militia_staticCrew with class [] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:53 2026-06-07 04:06:53:017 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_reb_militia_AA with class [] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:53 2026-06-07 04:06:53:017 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_reb_militia_Marksman with class [] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:53 2026-06-07 04:06:53:017 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_reb_militia_Engineer with class [] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:53 2026-06-07 04:06:53:017 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_reb_militia_Unarmed with class [] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:53 2026-06-07 04:06:53:017 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_reb_militia_AT with class [] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:53 2026-06-07 04:06:53:017 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_reb_militia_Sniper with class [] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:53 2026-06-07 04:06:53:017 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_reb_militia_Medic with class [] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:53 2026-06-07 04:06:53:017 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_reb_militia_Grenadier with class [] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:53 2026-06-07 04:06:53:018 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_reb_militia_Petros with class [] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:53 2026-06-07 04:06:53:018 | Antistasi | Info | File: A3A_fnc_initVarServer | Loading template Fallout_Civilians for side CIV | Called By: A3A_fnc_initServer
+ 0:06:53 2026-06-07 04:06:53:018 | Antistasi | Info | File: A3A_fnc_compatibilityLoadFaction | Compatibility loading template: '\x\A3UE\addons\templates\Templates\Fallout\NVCIV.sqf' as side CIV | Called By: A3A_fnc_initVarServer
+ 0:06:53 Error in expression <ivate _dlcUniforms = [];          
+
+if (_hasApex) then {_dlcUniforms append [];
+>
+ 0:06:53   Error position: <_hasApex) then {_dlcUniforms append [];
+>
+ 0:06:53   Error Undefined variable in expression: _hasapex
+ 0:06:53 File x\A3UE\addons\templates\Templates\Fallout\NVCIV.sqf..., line 286
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 158
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 158
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 158
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 158
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 158
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 158
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 158
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 158
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 158
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 158
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 158
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 158
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 158
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 158
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 158
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 158
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 158
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 158
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 158
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 158
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error compiling '' in 'hitpelvis'
+ 0:06:53 Error compiling '' in 'hitabdomen'
+ 0:06:53 Error compiling '' in 'hitdiaphragm'
+ 0:06:53 Error compiling '' in 'hitchest'
+ 0:06:53 Error compiling '' in 'hitarms'
+ 0:06:53 Error compiling '' in 'hitlegs'
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Warning Message: Error: creating weapon vault_scientist_uniform with scope=private
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error compiling '' in 'hitpelvis'
+ 0:06:53 Error compiling '' in 'hitabdomen'
+ 0:06:53 Error compiling '' in 'hitdiaphragm'
+ 0:06:53 Error compiling '' in 'hitchest'
+ 0:06:53 Error compiling '' in 'hitarms'
+ 0:06:53 Error compiling '' in 'hitlegs'
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error in expression <"]; 
+private _choice = "";
+if((typeName _attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error position: <_attachment) == "ARRAY") then {
+if(count>
+ 0:06:53   Error Undefined variable in expression: _attachment
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 40
+ 0:06:53 Error in expression <orTemplate getOrDefault [_key, []];
+if (_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error position: <_data isEqualTo []) exitWith {};
+private>
+ 0:06:53   Error Undefined variable in expression: _data
+ 0:06:53 File x\A3A\addons\core\functions\Templates\Loadouts\fn_loadout_builder.sqf..., line 141
+ 0:06:53 Error compiling '' in 'hitpelvis'
+ 0:06:53 Error compiling '' in 'hitabdomen'
+ 0:06:53 Error compiling '' in 'hitdiaphragm'
+ 0:06:53 Error compiling '' in 'hitchest'
+ 0:06:53 Error compiling '' in 'hitarms'
+ 0:06:53 Error compiling '' in 'hitlegs'
+ 0:06:53 2026-06-07 04:06:53:152 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_civ_militia_Press with class [] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:53 2026-06-07 04:06:53:153 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_civ_militia_Worker with class [] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:53 2026-06-07 04:06:53:153 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_civ_militia_Man with class [] and 20 loadouts | Called By: A3A_fnc_compatibilityLoadFaction
+ 0:06:53 2026-06-07 04:06:53:153 | Antistasi | Info | File: A3A_fnc_initVarServer | Loading template Vanilla_Exegermenos for side EAST | Called By: A3A_fnc_initServer
+ 0:06:53 2026-06-07 04:06:53:474 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_riv_militia_Mercenary with class ["militia",true] and 20 loadouts | Called By: A3A_fnc_loadRivals
+ 0:06:53 2026-06-07 04:06:53:477 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_riv_militia_CellLeader with class ["militia",true] and 20 loadouts | Called By: A3A_fnc_loadRivals
+ 0:06:53 2026-06-07 04:06:53:477 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_riv_militia_ExplosivesExpert with class ["militia",true] and 20 loadouts | Called By: A3A_fnc_loadRivals
+ 0:06:53 2026-06-07 04:06:53:477 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_riv_militia_Sharpshooter with class ["militia",true] and 20 loadouts | Called By: A3A_fnc_loadRivals
+ 0:06:53 2026-06-07 04:06:53:477 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_riv_militia_Partisan with class ["militia",true] and 20 loadouts | Called By: A3A_fnc_loadRivals
+ 0:06:53 2026-06-07 04:06:53:477 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_riv_militia_Saboteur with class ["militia",true] and 20 loadouts | Called By: A3A_fnc_loadRivals
+ 0:06:53 2026-06-07 04:06:53:477 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_riv_militia_Minuteman with class ["militia",true] and 20 loadouts | Called By: A3A_fnc_loadRivals
+ 0:06:53 2026-06-07 04:06:53:477 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_riv_militia_Enforcer with class ["militia",true] and 20 loadouts | Called By: A3A_fnc_loadRivals
+ 0:06:53 2026-06-07 04:06:53:477 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_riv_militia_Crew with class ["militia",true] and 20 loadouts | Called By: A3A_fnc_loadRivals
+ 0:06:53 2026-06-07 04:06:53:477 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_riv_militia_Pilot with class ["militia",true] and 20 loadouts | Called By: A3A_fnc_loadRivals
+ 0:06:53 2026-06-07 04:06:53:478 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_riv_militia_Commander with class ["militia",true] and 20 loadouts | Called By: A3A_fnc_loadRivals
+ 0:06:53 2026-06-07 04:06:53:478 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_riv_militia_Oppressor with class ["militia",true] and 20 loadouts | Called By: A3A_fnc_loadRivals
+ 0:06:53 2026-06-07 04:06:53:478 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_riv_militia_Unarmed with class ["militia",true] and 20 loadouts | Called By: A3A_fnc_loadRivals
+ 0:06:53 2026-06-07 04:06:53:478 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_riv_militia_SpecialistAA with class ["militia",true] and 20 loadouts | Called By: A3A_fnc_loadRivals
+ 0:06:53 2026-06-07 04:06:53:478 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_riv_militia_Medic with class ["militia",true] and 20 loadouts | Called By: A3A_fnc_loadRivals
+ 0:06:53 2026-06-07 04:06:53:478 | Antistasi | Debug | File: A3A_fnc_registerUnitType | Registering unit loadouts_riv_militia_SpecialistAT with class ["militia",true] and 20 loadouts | Called By: A3A_fnc_loadRivals
+ 0:06:53 2026-06-07 04:06:53:478 | Antistasi | Info | File: A3A_fnc_initVarServer | Generating black market vehicles list | Called By: A3A_fnc_initServer
+ 0:06:53 2026-06-07 04:06:53:483 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class air_f_jets does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:483 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_jets from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:483 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class soft_f_kart does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:483 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_kart from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:483 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class data_f_mark does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:483 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_marksmen from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:483 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class armor_f_tank does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:483 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_tanks from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:483 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class soft_f_orange does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:483 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_lawsofwar from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:483 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class data_f_aow does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:483 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_artofwar from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:483 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class supplies_f_exp does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:484 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_apex from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:484 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class soft_f_contact does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:484 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_contact from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:484 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class air_f_heli does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:484 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_helicopters from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:484 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class Weapons_1_F_lxWS does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:484 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_ws from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:484 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class RF_Weapons does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:484 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_rf from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:484 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class EF_Marines does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:485 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_ef from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:485 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class CSLA does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:485 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_csla from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:485 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class gm_core does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:485 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_gm from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:485 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class vn_weapons does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:485 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_sogpf from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:485 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class air_f_vietnam_04 does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:485 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_nickelsteel from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:485 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class ww2_spe_assets_c_characters_germans_c does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:485 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_spe from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:485 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class ww2_spex_assets_c_characters_americans_c does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:485 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_spex from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:485 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class Kio_Kkiv_2035 does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:485 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_kkiv2035 from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:485 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class Weapons_1_F_lxWS does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:485 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class A3_Aegis_Armor_F_Aegis_APC_Tracked_02 does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:485 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_aegis from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:485 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class Weapons_1_F_lxWS does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:485 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class A3_Aegis_Armor_F_Aegis_APC_Tracked_02 does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:485 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class A3_Atlas_Armor_F_Atlas_APC_Tracked_02 does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:485 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_atlas from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:485 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class Weapons_1_F_lxWS does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:485 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class A3_Aegis_Armor_F_Aegis_APC_Tracked_02 does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:485 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class A3_Atlas_Armor_F_Atlas_APC_Tracked_02 does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:485 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class A3_Police_Data_F_Police does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:485 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_police from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:485 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class Weapons_1_F_lxWS does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:485 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class A3_Aegis_Armor_F_Aegis_APC_Tracked_02 does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:485 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class A3_Atlas_Armor_F_Atlas_APC_Tracked_02 does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:485 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class A3_Opf_Armor_F_Opf_APC_Tracked_02 does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:485 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_opposingforces from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:485 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class AMF_Patches does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:485 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_amf from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:488 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class WM_Rebels does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:488 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_wmempire from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:488 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class JMSLLTE_empire_mod does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:488 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_empire from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:488 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class EAW_Air does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:488 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class WBK_MeleeMechanics does exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:488 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_eaw from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:489 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class fow_tanks does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:489 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_ww2fow from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:489 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class uns_weap_w does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:489 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_unsung from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:489 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class UK3CB_Factions_Vehicles_SUV does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:489 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_3cbf from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:489 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class IFA3_Core does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:489 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_ifa from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:489 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class ffaa_data does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:489 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_ffaa from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:489 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class ASZ_Weapons_A3 does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:489 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_pedagne from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:489 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class sfp_soldiers does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:489 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_sfp from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:489 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class mas_chi_army does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:489 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_pla from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:489 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class PRACS_Core does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:489 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class PRACS_SLA_Core does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:489 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_racs from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:489 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class bwa3_common does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:489 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_bwa3 from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:489 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class 3AS_Characters does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:489 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class 442_equipment does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:489 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class SWLB_clones does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:489 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class JLTS_core does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:489 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class CWDependencies does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:489 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_cw from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:490 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class CUP_Creatures_People_Civil_Russia does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:490 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class CUP_BaseConfigs does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:490 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class CUP_AirVehicles_Core does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:490 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_cup from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:490 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class UK3CB_BAF_Weapons does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:490 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class UK3CB_BAF_Vehicles does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:490 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class UK3CB_BAF_Units_Common does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:490 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class UK3CB_BAF_Equipment does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:490 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_3cbbaf from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:490 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class rhsgref_main does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:490 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class rhssaf_c_vehicles does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:490 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class rhs_c_tanks does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:490 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class RHS_US_A2Port_Armor does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:490 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_rhs from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:490 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class OPTRE_Core does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:490 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class OPTRE_FC_Core does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:490 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_optre from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:490 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class hlcweapons_core does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:490 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_niarms from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:490 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class sp_fwa_fal does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:490 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_fwa from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:490 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class Tier1_Weapons does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:490 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_tow from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:491 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class TMT_Core does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:491 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_tmt from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:491 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class TFC_Core_Data does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:491 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class TFC_CA_Characters does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:491 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class TFC_SF_Characters does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:491 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class tfc_rcaf_cc130j does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:491 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_tfc from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:491 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class SMA_Weapons does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:491 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_sma from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:491 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class csa38ii_data does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:491 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_csa38 from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:494 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class sc_weapons does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:494 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_scion from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:494 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class WBK_SciFiWeaponary does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:494 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_wrs from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:494 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class BRAF_Air does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:494 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_braf from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:494 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class NORTH_Main does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:494 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_nfts from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:495 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class SSV_Android does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:495 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class SSV_Vanguard does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:495 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class OPTRE_Core does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:495 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_android from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:495 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class CUP_Creatures_People_Civil_Russia does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:495 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class CUP_BaseConfigs does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:495 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class CUP_AirVehicles_Core does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:495 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class cwr3_weapons does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:495 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_cwr from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:495 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class CUP_Creatures_People_Civil_Russia does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:495 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class CUP_BaseConfigs does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:495 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class CUP_AirVehicles_Core does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:495 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class cwr3_weapons does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:495 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class cwr3_expansion_uk does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:495 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_cwrbaf from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:495 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class CUP_Creatures_People_Civil_Russia does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:495 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class CUP_BaseConfigs does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:495 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class CUP_AirVehicles_Core does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:495 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class cwr3_weapons does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:495 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class cwr3_expansion_usmc does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:495 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_cwrusmc from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:495 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class sab_flyinglegends does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:495 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_flyleg from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:495 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class sab_flyinglegends does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:495 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class sab_sw_i16 does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:495 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_scrtwpns from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:495 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class sab_navallegends does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:495 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_navleg from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:495 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class Finnish_Forces_Pack does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:495 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_ffp from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:495 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class XA_185 does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:495 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_ffpxa185 from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:496 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class HAFM_Acc does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:496 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_hafm from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:496 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class YL_scripts does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:496 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_ylarms from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:496 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class bnae_core does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:496 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_projinf from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:496 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class Weapons_F_JCA_IA does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:496 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class Weapons_F_JCA_IA_Accessories does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:496 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class Weapons_F_JCA_IA_LongRangeRifles_AWM does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:496 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class Weapons_F_JCA_IA_Pistols_P226 does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:496 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class Weapons_F_JCA_IA_Pistols_P320 does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:496 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class Weapons_F_JCA_IA_Rifles_M4A1 does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:496 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class Weapons_F_JCA_IA_Rifles_M4A4 does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:496 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class Weapons_F_JCA_IA_Rifles_SR10 does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:496 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class Weapons_F_JCA_IA_Rifles_SR25 does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:496 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class Weapons_F_JCA_IA_SMGs_MP5 does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:497 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_jcaia from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:497 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class vests_f_JCA_IE does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:497 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_jcaie from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:497 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class Flex_CUP_NOR_Faction does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:497 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_FlexNorAF from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:497 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class F16_Norwegian_Reskin does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:497 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_FlexNorAFF16 from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:497 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class TKE_Ext_Core_V does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:497 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_ScifiVP from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:497 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class MPP_PISTOLS does not exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:497 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Skipped addons_mpp from adding to black market list. Addons requirements not met. | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:497 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class A3_Armor_F does exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:497 | Antistasi | Verbose | File: A3U_fnc_hasAddon | CfgPatches class A3_Weapons_F does exist. | Called By: A3U_fnc_grabBlackMarketVehicles
+ 0:06:53 2026-06-07 04:06:53:497 | Antistasi | Verbose | File: A3U_fnc_grabBlackMarketVehicles | Adding B_Quadbike_01_F with price: 0 type: ARMEDCAR condition: {["resources_3"] call A3U_fnc_hasRequirements && ["factories_3"] call A3U_fnc_hasRequirements} | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:497 | Antistasi | Info | File: A3A_fnc_compileMissionAssets | Identifying unit types | Called By: A3A_fnc_initVarServer
+ 0:06:53 2026-06-07 04:06:53:497 | Antistasi | Info | File: A3A_fnc_compileMissionAssets | Identifying vehicle types | Called By: A3A_fnc_initVarServer
+ 0:06:53 Warning Message: No entry 'bin\config.bin/CfgMarkers.\x\A3UE\addons\templates\Templates\Fallout\ncr_icon.paa'
+ 0:06:53 Warning Message: No entry '.icon'
+ 0:06:53 Warning Message: '/' is not a value
+ 0:06:53 Warning Message: No entry '.size'
+ 0:06:53 Warning Message: '/' is not a value
+ 0:06:53 Warning Message: No entry '.color'
+ 0:06:53 Warning Message: Size: '/' not an array
+ 0:06:53 Warning Message: Size: '/' not an array
+ 0:06:53 Warning Message: No entry 'bin\config.bin/CfgMarkers.\x\A3UE\addons\templates\Templates\Fallout\bos_icon.paa'
+ 0:06:53 Warning Message: No entry '.icon'
+ 0:06:53 Warning Message: '/' is not a value
+ 0:06:53 Warning Message: No entry '.size'
+ 0:06:53 Warning Message: '/' is not a value
+ 0:06:53 Warning Message: No entry '.color'
+ 0:06:53 Warning Message: Size: '/' not an array
+ 0:06:53 Warning Message: Size: '/' not an array
+ 0:06:53 2026-06-07 04:06:53:512 | Antistasi | Info | File: A3A_fnc_initVarServer | Creating civilian vehicles lists | Called By: A3A_fnc_initServer
+ 0:06:53 Error in expression <select (_i+1));
+_curWeight = _curWeight + (_array select (_i+1));
+};
+};
+if (_cur>
+ 0:06:53   Error position: <+ (_array select (_i+1));
+};
+};
+if (_cur>
+ 0:06:53   Error Generic error in expression
+ 0:06:53 File x\A3A\addons\core\functions\init\fn_initVarServer.sqf..., line 419
+20:08:46 Starting mission:
+20:08:46  Mission file: Antistasi_takistan
+20:08:46  Mission world: takistan
+20:08:46  Mission directory: x\A3A\addons\maps\Antistasi_takistan.takistan\
+20:08:47 "User/BIS_fnc_log: [BIS_fnc_preload] ----- Initializing scripts in Antistasi_takistan -----"
+20:08:47 "User/BIS_fnc_log: [recompile] recompile BIS_fnc_missionTasksLocal"
+20:08:47 "User/BIS_fnc_log: [recompile] recompile BIS_fnc_missionConversationsLocal"
+20:08:47 "User/BIS_fnc_log: [recompile] recompile BIS_fnc_missionFlow"
+20:08:47 "User/BIS_fnc_log: [preInit] BIS_fnc_feedbackMain (0 ms)"
+20:08:47 "User/BIS_fnc_log: [preInit] BIS_fnc_missionHandlers (0 ms)"
+20:08:47 "User/BIS_fnc_log: [preInit] BIS_fnc_storeParamsValues (0 ms)"
+20:08:47 "User/BIS_fnc_log: [preInit] ""DeltaTime computation started"""
+20:08:47 "User/BIS_fnc_log: [preInit] BIS_fnc_keyframeAnimation_deltaTime (0 ms)"
+20:08:47 "User/BIS_fnc_log: [preInit] BIS_fnc_getServerVariable (0 ms)"
+20:08:47 2026-06-07 00:08:47:782 | Antistasi | Debug | File: A3A_fnc_initPreJIP | fn_initPreJIP Started | Called By: preInit
+20:08:47 2026-06-07 00:08:47:782 | Antistasi | Debug | File: A3A_fnc_initPreJIP | fn_initPreJIP Finished | Called By: preInit
+20:08:47 "User/BIS_fnc_log: [preInit] A3A_fnc_initPreJIP (0 ms)"
+20:08:47 "User/BIS_fnc_log: [preInit] WBK_DeathAnimation_fnc_preInitClient (0 ms)"
+20:08:47 "User/BIS_fnc_log: [preInit] Fallout_Mutant_AI_fnc_preInitClient (1.98364 ms)"
+20:08:47 "User/BIS_fnc_log: [preInit] BIS_fnc_OM_HandleMapControls (0 ms)"
+20:08:47 "User/BIS_fnc_log: [BIS_fnc_OM_moduleSmartMarkers] Error: SmartMarker system has not been yet initialized."
+20:08:47 "User/BIS_fnc_log: [preInit] BIS_fnc_OM_moduleSmartMarkers (0 ms)"
+20:08:47 [CBA] (xeh) INFO: [85860,483.158,0] PreInit started. v3.18.6.260327
+20:08:47 [CBA] (settings) INFO: Reading settings from settings file.
+20:08:47 [CBA] (settings) INFO: Finished reading settings from settings file.
+20:08:47 [CBA] (settings) INFO: Mission Config: File [cba_settings.sqf] loaded successfully.
+20:08:47 [CBA] (xeh) WARNING: One or more children of class CAManBase do not support Extended Event Handlers. Fall back to loop.
+20:08:47 [CBA] (xeh) INFO: [85860,483.306,0] PreInit finished.
+20:08:47 "User/BIS_fnc_log: [preInit] CBA_fnc_preInit (148.01 ms)"
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:47 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:48 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:48 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:48 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:48 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:48 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:48 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:48 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:48 PortableHelipadLight_01_white_F: light_1_blinking - unknown animation source MarkerLight (defined in AnimationSources::Light_1_source)
+20:08:48 No face for R Alpha 1-1:1
+20:08:48 d:\Bis\Source\Stable\Futura\lib\Network\networkServer.cpp NetworkServer::OnClientStateChanged:NOT IMPLEMENTED - briefing!
+20:08:48 "User/BIS_fnc_log: [module] zen_modules_fnc_bi_moduleCurator (254.974 ms)"
+20:08:48 "User/BIS_fnc_log: [module] bis_fnc_moduleHideTerrainObjects (3.02124 ms)"
+20:08:48 "User/BIS_fnc_log: [module] bis_fnc_moduleHideTerrainObjects (3.02124 ms)"
+20:08:48 "User/BIS_fnc_log: [module] bis_fnc_moduleHideTerrainObjects (3.9978 ms)"
+20:08:48 "User/BIS_fnc_log: [module] bis_fnc_moduleHideTerrainObjects (3.9978 ms)"
+20:08:48 "User/BIS_fnc_log: [module] bis_fnc_moduleHideTerrainObjects (3.9978 ms)"
+20:08:48 "User/BIS_fnc_log: [module] bis_fnc_moduleHideTerrainObjects (3.9978 ms)"
+20:08:48 "User/BIS_fnc_log: [module] bis_fnc_moduleHideTerrainObjects (3.9978 ms)"
+20:08:48 "User/BIS_fnc_log: [module] bis_fnc_moduleHideTerrainObjects (3.9978 ms)"
+20:08:48 "User/BIS_fnc_log: [module] bis_fnc_moduleHideTerrainObjects (3.9978 ms)"
+20:08:48 "User/BIS_fnc_log: [module] bis_fnc_moduleHideTerrainObjects (3.9978 ms)"
+20:08:48 "User/BIS_fnc_log: [module] bis_fnc_moduleHideTerrainObjects (6.98853 ms)"
+20:08:48 "User/BIS_fnc_log: [module] bis_fnc_moduleHideTerrainObjects (6.98853 ms)"
+20:08:50 "User/BIS_fnc_log: [script] initServer.sqf"
+20:08:50 "User/BIS_fnc_log: [script] initPlayerLocal.sqf"
+20:08:50 "User/BIS_fnc_log: [postInit] BIS_fnc_missionFlow (0 ms)"
+20:08:50 "User/BIS_fnc_log: [postInit] BIS_fnc_initParams (1.00708 ms)"
+20:08:50 "User/BIS_fnc_log: [postInit] BIS_fnc_initRespawn (0 ms)"
+20:08:50 "User/BIS_fnc_log: [postInit] BIS_fnc_keyframeAnimation_init (0.976563 ms)"
+20:08:50 "User/BIS_fnc_log: [postInit] HALs_money_fnc_initModule (0 ms)"
+20:08:50 2026-06-07 00:08:50:762 | Antistasi | Info | File: A3A_fnc_initServer | Server init started
+20:08:50 2026-06-07 00:08:50:762 | Antistasi | Info | File: A3A_fnc_initServer | Server version: 11.9.8.0
+20:08:50 2026-06-07 00:08:50:762 | Antistasi | Info | File: A3A_fnc_initVarCommon | initVarCommon started | Called By: A3A_fnc_initServer
+20:08:50 2026-06-07 00:08:50:762 | Antistasi | Info | File: A3A_fnc_initVarCommon | Setting initial variables | Called By: A3A_fnc_initServer
+20:08:50 2026-06-07 00:08:50:762 | Antistasi | Info | File: A3A_fnc_initVarCommon | Initialising PATCOM Variables | Called By: A3A_fnc_initServer
+20:08:50 2026-06-07 00:08:50:763 | Antistasi | Info | File: A3A_fnc_initVarCommon | Declaring item categories | Called By: A3A_fnc_initServer
+20:08:50 2026-06-07 00:08:50:763 | Antistasi | Info | File: A3A_fnc_initVarCommon | Starting mod detection | Called By: A3A_fnc_initServer
+20:08:50 2026-06-07 00:08:50:763 | Antistasi | Info | File: A3A_fnc_initVarCommon | Creating building arrays | Called By: A3A_fnc_initServer
+20:08:50 2026-06-07 00:08:50:763 | Antistasi | Info | File: A3A_fnc_initVarCommon | Compiling sounds and animations | Called By: A3A_fnc_initServer
+20:08:50 2026-06-07 00:08:50:764 | Antistasi | Info | File: A3A_fnc_initVarCommon | initVarCommon completed | Called By: A3A_fnc_initServer
+20:08:50 2026-06-07 00:08:50:764 | Antistasi | Info | File: A3A_fnc_initZones | initZones started | Called By: A3A_fnc_initServer
+20:08:50 2026-06-07 00:08:50:769 | Antistasi | Error | File: A3A_fnc_initSpawnPlaces | InitSpawnPlaces: Marker outp_16_vehicle is not long enough for vehicles required are 10 meters! | Called By: A3A_fnc_prepareMarkerArrays
+20:08:50 2026-06-07 00:08:50:769 | Antistasi | Warning | File: A3A_fnc_initSpawnPlaces | InitSpawnPlaces: Could not find any vehicle places on outpost_16! | Called By: A3A_fnc_prepareMarkerArrays
+20:08:50 2026-06-07 00:08:50:770 | Antistasi | Info | File: A3A_fnc_initBases | InitBases started | Called By: A3A_fnc_initZones

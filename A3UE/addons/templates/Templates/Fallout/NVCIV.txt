@@ -283,37 +283,34 @@ private _workerHeadgear = [
 
 private _dlcUniforms = [];          //Uniforms given if DLCs are enabled, only given to the Arsenal not Civilians
 
-if (_hasApex) then {
-    _dlcUniforms append [];
+if (_hasApex) then {_dlcUniforms append [];
 };
 
-if (_hasLawsOfWar) then {
-    _dlcUniforms append [];
+if (_hasLawsOfWar) then {_dlcUniforms append [];
 };
 
-["uniforms", _civUniforms + _pressUniforms + _workerUniforms + _dlcUniforms] call _fnc_saveToTemplate;
+["uniforms", _civUniforms + _pressUniforms + _workerUniforms + _dlcUniforms] call _fnc_saveToTemplate;          //Uniforms given to the Arsenal, Allowed for Undercover and given to Rebel Ai that go Undercover
 
-// Define missing structural variables to avoid undefined exceptions
-private _pressVests = [];
-private _pressHelmets = _pressHeadgear;
-private _workerHelmets = _workerHeadgear;
-private _civHats = _civHeadgear; // Feeds your Raider/Wasteland hats to standard civilians
+_civhats = [];
 
 ["headgear", _civHats] call _fnc_saveToTemplate;            //Headgear given to Normal Civs, Workers, Undercover Rebels.
 
 private _loadoutData = call _fnc_createLoadoutData;
+
 _loadoutData set ["uniforms", _civUniforms];
 _loadoutData set ["helmets", _civHats];
 
 _loadoutData set ["pressUniforms", _pressUniforms];
 _loadoutData set ["pressVests", _pressVests];
 _loadoutData set ["pressHelmets", _pressHelmets];
+
 _loadoutData set ["workerUniforms", _workerUniforms];
 _loadoutData set ["workerHelmets", _workerHelmets];
 
 _loadoutData set ["maps", ["ItemMap"]];
 _loadoutData set ["watches", ["ItemWatch"]];
 _loadoutData set ["compasses", ["ItemCompass"]];
+
 
 private _manTemplate = {
     ["helmets"] call _fnc_setHelmet;
@@ -325,7 +322,6 @@ private _manTemplate = {
     ["watches"] call _fnc_addWatch;
     ["compasses"] call _fnc_addCompass;
 };
-
 private _workerTemplate = {
     [["workerHelmets", "helmets"] call _fnc_fallback] call _fnc_setHelmet;
     ["workerUniforms"] call _fnc_setUniform;
@@ -336,18 +332,17 @@ private _workerTemplate = {
     ["watches"] call _fnc_addWatch;
     ["compasses"] call _fnc_addCompass;
 };
-
 private _pressTemplate = {
     [["pressHelmets", "helmets"] call _fnc_fallback] call _fnc_setHelmet;
     ["pressVests"] call _fnc_setVest;
     ["pressUniforms"] call _fnc_setUniform;
+
     ["items_medical_standard"] call _fnc_addItemSet;
 
     ["maps"] call _fnc_addMap;
     ["watches"] call _fnc_addWatch;
     ["compasses"] call _fnc_addCompass;
 };
-
 private _prefix = "militia";
 private _unitTypes = [
     ["Press", _pressTemplate],
@@ -356,3 +351,4 @@ private _unitTypes = [
 ];
 
 [_prefix, _unitTypes, _loadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+
